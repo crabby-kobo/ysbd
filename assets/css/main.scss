@@ -1293,7 +1293,8 @@ html {
         display: grid;
         grid-template-areas:
             "header"
-            "content";
+            "content"
+            "footer";
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
 
@@ -1547,6 +1548,24 @@ html {
 
         a {
             text-decoration: none;
+        }
+
+        footer {
+            padding: 4em 6em 2em 6em;
+
+            .copyright {
+                color: var(--red);
+                font-family: 'Avenir Light';
+                font-weight: Light;
+                font-style: normal;
+                font-size: .7em;
+                text-transform: uppercase;
+
+                a {
+                    text-decoration: none;
+                    color: var(--red);
+                }
+            }
         }
     }
 }

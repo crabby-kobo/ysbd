@@ -3,11 +3,6 @@
 // 1. Fonts
 // 2. Colors
 // 3. General
-// 4. Cover
-// 5. About me
-// 6. Works
-// 7. Contact
-// 8. Footer
 
 /////////// FONTS ///////////
 
@@ -1341,6 +1336,14 @@ html {
                     display: block;
                     font-size: 1em;
                     margin-top: 20px;
+
+                    a {
+
+                        font-family: "Avenir Light", sans-serif;
+                        font-weight: light;
+                        font-size: 1em;
+                        text-transform: capitalize;
+                    }
                 }
 
                 li {
@@ -1551,7 +1554,7 @@ html {
         }
 
         footer {
-            padding: 4em 6em 2em 6em;
+            padding: 2em 3em 2em 6em;
 
             .copyright {
                 color: var(--red);

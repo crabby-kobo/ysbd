@@ -1323,6 +1323,13 @@ html body nav ul span {
   margin-top: 20px;
 }
 
+html body nav ul span a {
+  font-family: "Avenir Light", sans-serif;
+  font-weight: light;
+  font-size: 1em;
+  text-transform: capitalize;
+}
+
 html body nav ul li {
   opacity: 0;
   padding: 2em;
@@ -1583,7 +1590,7 @@ html body a {
 }
 
 html body footer {
-  padding: 4em 6em 2em 6em;
+  padding: 2em 3em 2em 6em;
 }
 
 html body footer .copyright {

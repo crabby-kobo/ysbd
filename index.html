@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- <meta name="description" content="" /> -->
-    <link rel="shortcut icon" type="png" href="./assets/img/ysbd-favicon.png" />
+    <link rel="shortcut icon" type="png" href="./assets/img/favicon.png" />
     <link rel="stylesheet" href="./assets/css/main.css" type="text/css" />
     <link rel="stylesheet" href="./assets/css/home.css" type="text/css" />
-    <link rel="stylesheet" href="https://s3.amazonaws.com/icomoon.io/114779/Socicon/style.css?u8vidh" />
+    <link rel="stylesheet" href="./assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.css">
     <title>YSBD | Home</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -17,22 +18,167 @@
 </head>
 
 <body>
-    <div class="content">
-        <div class="home">
+    <nav id="overlay">
+        <img src="./assets/img/close.svg" class="close-btn" id="close-menu">
 
+        <ul>
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+            <li>
+                <a href="#">Booking / roster</a>
+                <span><a href="./html/fr/flying-structures.html">Flying Structures</a></span>
+                <span><a href="#">Pépé Elle</a></span>
+                <span><a href="#">NairLess</a></span>
+                <span><a href="./html/fr/between-sleeps.html">Between Sleeps</a></span>
+                <span><a href="#">Sichuan</a></span>
+                <span><a href="#">Baloonarium</a></span>
+                <span><a href="#">Suonee</a></span>
+                <span><a href="#">Atawël</a></span>
+            </li>
+            <li>
+                <a href="#">Management & edition</a>
+            </li>
+            <li>
+                <a href="#">À propos</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="menu">
+            <div class="language">
+                <a href="./fr/ysbd.html">
+                    <p class="en">EN</p>
+                </a>
+            </div>
+
+            <img src="./assets/img/menu.svg" class="menu-btn" id="open-menu">
         </div>
 
-        <!-- <div class="rs">
-            <p>
-                <ul>
-                    <li class="socicon socicon-instagram">
-                        <a href="https://www.instagram.com/ysbd.agency/"></a></li>
-                    <li class="socicon socicon-facebook">
-                        <a href="https://www.facebook.com/YSBDagency/"></a></li>
-                </ul>
-            </p>
-        </div> -->
+        <div class="logo">
+            <a href="./index.html">
+                <img src="./assets/img/logo.svg" alt="YSBD logo">
+            </a>
+        </div>
+    </header>
+
+    <div class="content">
+        <div id="wrapper">
+            <div id="slider-area" class="owl-carousel">
+                <a href="#">
+                    <div style="background-image: url(./assets/img/artists/flying-structures/flying-structures.jpg">
+                        <p>
+                            Flying Structures
+                        </p>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div style="background-image: url(./assets/img/artists/pepe-elle/pepe-elle.jpg">
+                        <p>
+                            Pépé Elle
+                        </p>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div style="background-image: url(./assets/img/artists/nairless/nairless.jpg">
+                        <p>
+                            NairLess
+                        </p>
+                    </div>
+                </a>
+
+                <a href="./html/fr/between-sleeps.html">
+                    <div style="background-image: url(./assets/img/artists/between-sleeps/between-sleeps.jpg">
+                        <p>
+                            Between Sleeps
+                        </p>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div style="background-image: url(./assets/img/artists/sichuan/sichuan.jpg">
+                        <p>
+                            Sichuan
+                        </p>
+
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div style="background-image: url(./assets/img/artists/baloonarium/baloonarium.png">
+                        <p>
+                            Baloonarium
+                        </p>
+
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div style="background-image: url(./assets/img/artists/suonee/suonee.jpg">
+                        <p>
+                            Suonee
+                        </p>
+
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div style="background-image: url(./assets/img/artists/atawel/atawel.jpg">
+                        <p>
+                            Atawël
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
     </div>
+    <script>
+        var overlay = document.getElementById('overlay');
+        var closeMenu = document.getElementById('close-menu');
+
+        document.getElementById('open-menu').addEventListener('click', function () {
+            overlay.classList.add('show-menu');
+        });
+
+        document.getElementById('close-menu').addEventListener('click', function () {
+            overlay.classList.remove('show-menu');
+        });
+    </script>
+
+    <script src="./assets/js/jquery-3.0.5.min.js"></script>
+    <script src="./assets/js/owl.carousel.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var owl = $('#slider-area');
+            owl.owlCarousel({
+                items: 1,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                // autoplayHoverPause: true
+                responsive: {
+                    // breakpoint from 0 up
+                    0: {
+                        items: 1
+                    },
+                    // breakpoint from 480 up
+                    480: {
+                        items: 1
+                    },
+                    // breakpoint from 768 up
+                    768: {
+                        items: 1
+                    }
+                }
+            });
+        })
+    </script>
+
 </body>
 
 </html>

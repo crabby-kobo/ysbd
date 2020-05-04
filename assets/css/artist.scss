@@ -1,5 +1,3 @@
-;
-
 .content {
   background: #fff;
   display: grid;
@@ -51,7 +49,6 @@
     z-index: 1;
     background: #fff;
     padding: 10em 6em 0 6em;
-    // overflow-x: hidden;
 
     .rs {
       ul {
@@ -78,12 +75,23 @@
     .text {
       margin-top: 2.5em;
       margin-bottom: 2.5em;
+
+      p {
+        em {
+          font-size: 1.2em;
+          font-family: "Avenir Black", sans-serif;
+          color: var(--red);
+          font-weight: bold;
+          font-style: normal;
+          padding-right: 5px;
+        }
+      }
     }
 
     figure {
       display: block;
-      margin: .2em;
-      padding: .5em;
+      margin: 0.2em;
+      padding: 0.5em;
 
       blockquote {
         margin: 0;
@@ -92,9 +100,8 @@
         font-style: normal;
         color: var(--red);
         text-transform: uppercase;
-        font-size: .8em;
+        font-size: 0.8em;
         text-align: center;
-
       }
 
       figcaption {
@@ -102,110 +109,15 @@
         font-weight: normal;
         font-style: normal;
         color: #000;
-        font-size: .8em;
+        font-size: 0.8em;
         text-align: center;
         margin: 0;
       }
     }
 
     .glider-contain {
-      // width: 85% !important;
       margin-top: 2%;
       margin-bottom: 7%;
     }
-
-    // .glider-next {
-    //   right: -100px;
-    //   top: 50%;
-    // }
-
-    // .glider-prev {
-    //   right: -40px;
-    //   top: 50%;
-    // }
-
-    #container {
-      height: 330px;
-    }
-
-    #circle {
-      position: relative;
-      width: 300px;
-      overflow: hidden;
-    }
-
-    #circle p {
-      fill: #000;
-    }
-
-    #circle a:hover {
-      fill: var(--red);
-    }
-
-    #circle .text-int {
-      fill: var(--red);
-      text-transform: uppercase;
-      font-family: "Avenir Black", sans-serif;
-      font-style: bold;
-      font-size: 0.8em;
-    }
-
-    #circle .cercle {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      // height: 540px;
-
-      -webkit-animation-name: rotate;
-      -moz-animation-name: rotate;
-      -ms-animation-name: rotate;
-      -o-animation-name: rotate;
-      animation-name: rotate;
-      -webkit-animation-duration: 10s;
-      -moz-animation-duration: 10s;
-      -ms-animation-duration: 10s;
-      -o-animation-duration: 10s;
-      animation-duration: 10s;
-      -webkit-animation-iteration-count: infinite;
-      -moz-animation-iteration-count: infinite;
-      -ms-animation-iteration-count: infinite;
-      -o-animation-iteration-count: infinite;
-      animation-iteration-count: infinite;
-      -webkit-animation-timing-function: linear;
-      -moz-animation-timing-function: linear;
-      -ms-animation-timing-function: linear;
-      -o-animation-timing-function: linear;
-      animation-timing-function: linear;
-    }
-
-    @keyframes rotate {
-      from {
-        transform: rotate(0);
-      }
-
-      to {
-        transform: rotate(360deg);
-      }
-    }
-
-    // #text {
-    //     // position: absolute;
-    //     // top: 50%;
-    //     // left: 50%;
-    //     transform: translate (-50%, -50%);
-    //     animation: text-animation 15s infinite linear;
-    // }
-
-    // @keyframes text-animation {
-    //     0% {
-    //         transform: rotate(0deg);
-    //     }
-
-    //     100% {
-    //         transform: rotate(360deg);
-    //     }
-
-    // }
   }
 }

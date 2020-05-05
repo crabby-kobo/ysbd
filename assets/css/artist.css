@@ -60,7 +60,7 @@
 }
 
 .content .l-col .rs ul {
-  margin-top: 0.3em;
+  margin-top: .3rem;
   margin-left: -3px;
   padding: 0;
 }
@@ -72,6 +72,22 @@
 
 .content .l-col .rs li {
   cursor: pointer;
+  margin: 0 1px 2.5rem 1px;
+}
+
+.content .l-col h2 {
+  margin-bottom: .2em;
+  line-height: 1em;
+}
+
+.content .l-col .label {
+  display: inline-block;
+  margin-top: -.5em;
+  margin-bottom: 1.3rem;
+  font-family: "Avenir Black", sans-serif;
+  padding: 4px 9px;
+  background: var(--red);
+  color: #fff;
 }
 
 .content .l-col .comment {
@@ -80,8 +96,8 @@
 }
 
 .content .l-col .text {
-  margin-top: 2.5em;
-  margin-bottom: 2.5em;
+  margin-top: 1.5rem;
+  margin-bottom: 2em;
 }
 
 .content .l-col .text p em {
@@ -95,7 +111,7 @@
 
 .content .l-col figure {
   display: block;
-  margin: 0.2em;
+  margin: 0.1em;
   padding: 0.5em;
 }
 
@@ -121,7 +137,6 @@
 }
 
 .content .l-col .glider-contain {
-  margin-top: 2%;
-  margin-bottom: 7%;
+  margin: 2% 0 2% -10px;
 }
 /*# sourceMappingURL=artist.css.map */

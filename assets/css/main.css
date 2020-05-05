@@ -1276,9 +1276,10 @@ html body {
 html body nav {
   z-index: 5;
   position: fixed;
+  right: 0;
   background: var(--red);
   padding: 2em;
-  width: 100%;
+  width: 50%;
   height: 100vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1300,20 +1301,15 @@ html body nav .close-btn {
 
 html body nav ul {
   list-style-type: none;
-  margin: 10% auto 0 auto;
+  margin: 7.7rem auto 0 3.5rem;
   padding: 0;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (25%)[4];
-      grid-template-columns: repeat(4, 25%);
-  width: 80%;
 }
 
 html body nav ul a {
   color: #fff;
   font-family: "Avenir Black", sans-serif;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.5em;
   text-transform: uppercase;
 }
 
@@ -1321,8 +1317,8 @@ html body nav ul span {
   color: #fff;
   font-weight: normal;
   display: block;
-  font-size: 1em;
-  margin-top: 20px;
+  font-size: 1.2em;
+  margin-top: 5px;
 }
 
 html body nav ul span a {
@@ -1334,7 +1330,7 @@ html body nav ul span a {
 
 html body nav ul li {
   opacity: 0;
-  padding: 2em;
+  padding: .9em;
 }
 
 html body .show-menu {
@@ -1514,7 +1510,7 @@ html body header {
   padding: 2em 4em;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "empty logo menu ";
+      grid-template-areas: "logo menu ";
   -ms-grid-columns: ()[3];
       grid-template-columns: repeat(3);
   -ms-grid-rows: 100%;
@@ -1523,10 +1519,11 @@ html body header {
 
 html body header .logo {
   -ms-grid-row: 1;
-  -ms-grid-column: 2;
+  -ms-grid-column: 1;
   grid-area: logo;
   height: 1.8em;
-  text-align: center;
+  text-align: left;
+  margin-left: 2rem;
 }
 
 html body header .logo img {
@@ -1534,8 +1531,9 @@ html body header .logo img {
 }
 
 html body header .menu {
+  z-index: 5;
   -ms-grid-row: 1;
-  -ms-grid-column: 3;
+  -ms-grid-column: 2;
   grid-area: menu;
   width: 100%;
   display: inline-block;
@@ -1593,23 +1591,5 @@ html body p a {
 
 html body a {
   text-decoration: none;
-}
-
-html body footer {
-  padding: 2em 3em 2em 6em;
-}
-
-html body footer .copyright {
-  color: var(--red);
-  font-family: 'Avenir Light';
-  font-weight: Light;
-  font-style: normal;
-  font-size: .7em;
-  text-transform: uppercase;
-}
-
-html body footer .copyright a {
-  text-decoration: none;
-  color: var(--red);
 }
 /*# sourceMappingURL=main.css.map */

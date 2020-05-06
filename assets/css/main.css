@@ -1,3 +1,9 @@
+/* TABLE OF CONTENTS :
+
+1. Fonts
+2. Colors
+3. General */
+/* 1. FONTS */
 @font-face {
   font-family: 'Library 3 AM';
   src: url("../fonts/library-3-am.otf") format("otf");
@@ -1253,10 +1259,12 @@
   content: "\e0a9";
 }
 
+/* 2. COLORS */
 :root {
   --red: #e20613;
 }
 
+/* 3. GENERAL */
 html body {
   background: #fff;
   font-family: "Avenir Book", sans-serif;
@@ -1568,6 +1576,10 @@ html body header .menu .language p:hover {
   background-color: var(--red);
 }
 
+html body .content {
+  background: #fff;
+}
+
 html body h2 {
   font-family: "Avenir Black", sans-serif;
   font-weight: bold;
@@ -1591,5 +1603,23 @@ html body p a {
 
 html body a {
   text-decoration: none;
+}
+
+html body footer {
+  padding: 2em 0;
+}
+
+html body footer .copyright {
+  color: var(--red);
+  font-family: 'Avenir Light';
+  font-weight: Light;
+  font-style: normal;
+  font-size: .7em;
+  text-transform: uppercase;
+}
+
+html body footer .copyright a {
+  text-decoration: none;
+  color: var(--red);
 }
 /*# sourceMappingURL=main.css.map */

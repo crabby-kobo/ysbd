@@ -1,0 +1,147 @@
+/* TABLE OF CONTENTS :
+
+1. General
+2. Gallery filters
+3. Gallery
+4. Footer */
+/* 1. GENERAL */
+.content {
+  padding: 8em 5.8rem 1rem 5.8rem;
+}
+
+.gallery-title {
+  grid-area: title;
+  margin: .8em auto auto;
+}
+
+.gallery-title h2 {
+  margin-bottom: 0;
+}
+
+/* 2. GALLERY FILTERS */
+.filters #filters {
+  list-style: none;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: .9em;
+  padding: 0;
+  margin-top: .5rem;
+}
+
+.filters #filters li {
+  display: inline-block;
+}
+
+.filters #filters li span {
+  margin: 3px 5px;
+  padding: 7px 10px;
+  font-family: "Avenir Black", sans-serif;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  line-height: 2.3rem;
+}
+
+.filters #filters li span:hover {
+  color: var(--red);
+}
+
+.filters #filters li span.active {
+  background: var(--red);
+  color: #fff;
+}
+
+@media all and (max-width: 414px) {
+  .filters #filters li {
+    display: block;
+  }
+}
+
+@media all and (max-width: 580px) {
+  .filters #filters {
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 414px) {
+  .filters {
+    margin: 90px 30px 15px 30px;
+  }
+}
+
+/* 3. GALLERY */
+#gallery {
+  margin-top: 2em;
+}
+
+#gallery .artists-gallery {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+#gallery .artists-gallery .artist {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  display: none;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  width: 50%;
+  background: var(--red);
+  cursor: pointer;
+}
+
+#gallery .artists-gallery .artist img {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+#gallery .artists-gallery .artist .caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: "Avenir Black", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#gallery .artists-gallery .artist .caption p {
+  text-align: center;
+  font-size: 1em;
+  letter-spacing: 1px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+  -webkit-transform: translate3d(10%, 0, 0);
+          transform: translate3d(10%, 0, 0);
+}
+
+#gallery .artists-gallery .artist .caption p span {
+  font-size: 1em;
+  text-transform: capitalize;
+  line-height: 2em;
+  color: var(--color);
+}
+
+#gallery .artists-gallery .artist:hover img {
+  opacity: .5;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+#gallery .artists-gallery .artist:hover p {
+  opacity: 1;
+}
+
+/* 4. FOOTER */
+footer {
+  margin-left: 5.8rem;
+}
+/*# sourceMappingURL=booking-roster.css.map */

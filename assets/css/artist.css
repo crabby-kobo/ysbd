@@ -1,5 +1,10 @@
+/* TABLE OF CONTENTS :
+
+1. Content
+2. Right column
+3. Left column */
+/* 1. GENERAL */
 .content {
-  background: #fff;
   width: 100%;
   height: 100vh;
   display: -ms-grid;
@@ -9,6 +14,8 @@
       grid-template-columns: repeat(2, 50%);
   -ms-grid-rows: auto;
       grid-template-rows: auto;
+  /* 2. RIGHT COLUMN */
+  /* 3. LEFT COLUMN */
 }
 
 .content .r-col {
@@ -155,23 +162,5 @@
   font-size: 0.8em;
   text-align: center;
   margin: 0;
-}
-
-.content footer {
-  padding: 2em 0;
-}
-
-.content footer .copyright {
-  color: var(--red);
-  font-family: 'Avenir Light';
-  font-weight: Light;
-  font-style: normal;
-  font-size: .7em;
-  text-transform: uppercase;
-}
-
-.content footer .copyright a {
-  text-decoration: none;
-  color: var(--red);
 }
 /*# sourceMappingURL=artist.css.map */

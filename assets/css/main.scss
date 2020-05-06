@@ -1,10 +1,10 @@
-// TABLE OF CONTENTS :
-//
-// 1. Fonts
-// 2. Colors
-// 3. General
+/* TABLE OF CONTENTS :
 
-/////////// FONTS ///////////
+1. Fonts
+2. Colors
+3. General */
+
+/* 1. FONTS */
 
 @font-face {
     font-family: 'Library 3 AM';
@@ -1268,13 +1268,13 @@
 }
 
 
-/////////// COLORS ///////////
+/* 2. COLORS */
 
 :root {
     --red: #e20613;
 }
 
-/////////// GENERAL ///////////
+/* 3. GENERAL */
 
 html {
 
@@ -1319,9 +1319,6 @@ html {
                 list-style-type: none;
                 margin: 7.7rem auto 0 3.5rem;
                 padding: 0;
-                // display: grid;
-                // grid-template-rows: repeat(4, 15%);
-                // width: 100%;
 
                 a {
                     color: #fff;
@@ -1333,15 +1330,12 @@ html {
 
                 span {
                     color: #fff;
-                    // font-family: "Avenir Book", sans-serif;
                     font-weight: normal;
                     display: block;
                     font-size: 1.2em;
                     margin-top: 5px;
-                    // margin-left: 15px;
 
                     a {
-
                         font-family: "Avenir Light", sans-serif;
                         font-weight: light;
                         font-size: 1em;
@@ -1402,16 +1396,6 @@ html {
         }
 
         @keyframes menu-item-anim {
-            // from {
-            //     transform: translateY(60%);
-            //     opacity: 0;
-            // }
-
-            // to {
-            //     transform: translateY(0%);
-            //     opacity: 1;
-            // }
-
             0% {
                 opacity: 1;
                 transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 275, 0, 1);
@@ -1503,11 +1487,8 @@ html {
                     margin: 1em 7em 0 auto;
 
                     p {
-                        // background-color: var(--red);
-                        // color: #fff;
                         color: var(--red);
                         border: solid 1.5px var(--red);
-                        // border-radius: 50px;
                         padding: 6px 6px 5px 6px;
                         font-size: .9em;
                         font-family: "Avenir Black", sans-serif;
@@ -1527,14 +1508,12 @@ html {
                         color: #fff;
                         background-color: var(--red);
                     }
-
-                    // a {
-                    //     text-decoration: none;
-                    //     color: var(--light);
-                    // }
                 }
             }
+        }
 
+        .content {
+            background: #fff;
         }
 
         h2 {
@@ -1564,6 +1543,22 @@ html {
             text-decoration: none;
         }
 
+        footer {
+            padding: 2em 0;
 
+            .copyright {
+                color: var(--red);
+                font-family: 'Avenir Light';
+                font-weight: Light;
+                font-style: normal;
+                font-size: .7em;
+                text-transform: uppercase;
+
+                a {
+                    text-decoration: none;
+                    color: var(--red);
+                }
+            }
+        }
     }
 }

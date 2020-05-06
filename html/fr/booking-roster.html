@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <meta name="description" content="" /> -->
+    <link rel="shortcut icon" type="png" href="../../assets/img/favicon.png" />
+    <link rel="stylesheet" href="../../assets/css/main.css" type="text/css" />
+    <link rel="stylesheet" href="../../assets/css/booking-roster.css" type="text/css" />
+
+    <title>YSBD | Booking / Roster</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery.mixitup.min.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+
+            var filterList = {
+
+                init: function () {
+
+                    $('#gallery').mixItUp({
+                        selectors: {
+                            target: '.artist',
+                            filter: '.filter'
+                        },
+                        load: {
+                            filter: '.dj, .live'
+                        }
+                    });
+
+                }
+
+            };
+
+            filterList.init();
+
+        });
+    </script>
+
+</head>
+
+<body>
+    <nav id="overlay">
+        <img src="../../assets/img/close.svg" class="close-btn" id="close-menu">
+
+        <ul>
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+            <li>
+                <a href="./booking-roster.html">Booking / roster</a>
+                <span><a href="./flying-structures.html">Flying Structures</a></span>
+                <span><a href="./pepe-elle.html">Pépé Elle</a></span>
+                <span><a href="./nairless.html">NairLess</a></span>
+                <span><a href="./between-sleeps.html">Between Sleeps</a></span>
+                <span><a href="./sichuan.html">Sichuan</a></span>
+                <span><a href="./baloonarium.html">Baloonarium</a></span>
+                <span><a href="./suonee.html">Suonee</a></span>
+                <span><a href="./atawel.html">Atawël</a></span>
+            </li>
+            <li>
+                <a href="./management-and-edition.html">Management & edition</a>
+            </li>
+            <li>
+                <a href="./about.html">À propos</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="menu">
+            <div class="language">
+                <a href="../fr/ysbd.html">
+                    <p class="en">EN</p>
+                </a>
+            </div>
+
+            <img src="../../assets/img/menu.svg" class="menu-btn" id="open-menu">
+        </div>
+
+        <div class="logo">
+            <a href="../../index.html">
+                <img src="../../assets/img/logo.svg" alt="YSBD logo">
+            </a>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="gallery-title">
+            <h2>Booking / Roster</h2>
+        </div>
+
+        <div class="filters">
+            <ul id="filters">
+                <li><span class="filter active" data-filter=".dj, .live">Tout</span>
+                </li>
+                <li><span class="filter" data-filter=".dj">DJ sets</span></li>
+                <li><span class="filter" data-filter=".live">LIVE sets</span></li>
+            </ul>
+        </div>
+
+        <div id="gallery">
+            <div class="artists-gallery">
+                <a href="./flying-structures.html">
+                    <div class="artist live" data-cat="live">
+                        <div class="artist-wrapper">
+                            <img src="../../assets/img/artists/flying-structures/flying-structures-min.jpg" alt="">
+                            <div class="caption">
+                                <p>Flying Structures</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./pepe-elle.html">
+                    <div class="artist dj" data-cat="dj">
+                        <div class="artist-wrapper">
+                            <img src="../../assets/img/artists/pepe-elle/pepe-elle-min.jpg" alt="">
+                            <div class="caption">
+                                <p>Pépé Elle</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./nairless.html">
+                    <div class="artist dj" data-cat="dj">
+                        <div class="artist-wrapper">
+                            <img src="../../assets/img/artists/nairless/nairless-min.jpg" alt="">
+                            <div class="caption">
+                                <p>NairLess</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./between-sleeps.html">
+                    <div class="artist dj live" data-cat="dj live">
+                        <div class="artist-wrapper">
+                            <img src="../../assets/img/artists/between-sleeps/between-sleeps-min.jpg" alt="">
+                            <div class="caption">
+                                <p>Between Sleeps</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./sichuan.html">
+                    <div class="artist dj" data-cat="dj">
+                        <div class="artist-wrapper">
+                            <img src="../../assets/img/artists/sichuan/sichuan-min.jpg" alt="">
+                            <div class="caption">
+                                <p>Sichuan</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./baloonarium.html">
+                    <div class="artist dj live" data-cat="dj live">
+                        <div class="artist-wrapper">
+                            <img src="../../assets/img/artists/baloonarium/baloonarium-min.jpg" alt="">
+                            <div class="caption">
+                                <p>Baloonarium</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./suonee.html">
+                    <div class="artist dj" data-cat="dj">
+                        <div class="artist-wrapper">
+                            <img src="../../assets/img/artists/suonee/suonee-min.jpg" alt="">
+                            <div class="caption">
+                                <p>Suonee</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./atawel.html">
+                    <div class="artist dj" data-cat="dj">
+                        <div class="artist-wrapper">
+                            <img src="../../assets/img/artists/atawel/atawel-min.jpg" alt="">
+                            <div class="caption">
+                                <p>Atawël</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <!-- <p class="copyright"><a href="www.crabby-kobo.com">Crabby Kōbō</a> design and production <br> © Copyright 2020
+            YSBD | All
+            rights
+            reserved</p> -->
+        <p class="copyright"><a href="www.crabby-kobo.com">Conception et réalisation Crabby Kōbō</a><br> ©
+            Copyright
+            2020
+            YSBD | Tous droits réservés</p>
+    </footer>
+
+    <script>
+        var overlay = document.getElementById('overlay');
+        var closeMenu = document.getElementById('close-menu');
+
+        document.getElementById('open-menu').addEventListener('click', function () {
+            overlay.classList.add('show-menu');
+        });
+
+        document.getElementById('close-menu').addEventListener('click', function () {
+            overlay.classList.remove('show-menu');
+        });
+    </script>
+</body>
+
+</html>

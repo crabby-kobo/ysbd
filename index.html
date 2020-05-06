@@ -9,8 +9,8 @@
     <link rel="shortcut icon" type="png" href="./assets/img/favicon.png" />
     <link rel="stylesheet" href="./assets/css/main.css" type="text/css" />
     <link rel="stylesheet" href="./assets/css/home.css" type="text/css" />
-    <link rel="stylesheet" href="./assets/css/owl.carousel.css">
-    <link rel="stylesheet" href="./assets/css/owl.theme.default.css">
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
 
     <title>YSBD | Home</title>
 
@@ -66,7 +66,7 @@
 
     <div class="content">
         <div id="wrapper">
-            <div id="slider-area" class="owl-carousel">
+            <div id="slider-area" class="owl-carousel owl-theme">
                 <a href="#">
                     <div style="background-image: url(./assets/img/artists/flying-structures/flying-structures.jpg">
                         <p>
@@ -151,7 +151,7 @@
     </script>
 
     <script src="./assets/js/jquery-3.0.5.min.js"></script>
-    <script src="./assets/js/owl.carousel.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -162,22 +162,22 @@
                 autoplay: true,
                 autoplayTimeout: 3000,
                 // autoplayHoverPause: true
-                responsive: {
-                    // breakpoint from 0 up
-                    0: {
-                        items: 1
-                    },
-                    // breakpoint from 480 up
-                    480: {
-                        items: 1
-                    },
-                    // breakpoint from 768 up
-                    768: {
-                        items: 1
-                    }
-                }
+                // responsive: {
+                //     // breakpoint from 0 up
+                //     0: {
+                //         items: 1
+                //     },
+                //     // breakpoint from 480 up
+                //     480: {
+                //         items: 1
+                //     },
+                //     // breakpoint from 768 up
+                //     768: {
+                //         items: 1
+                //     }
+                // }
             });
-        })
+        });
     </script>
 
 </body>

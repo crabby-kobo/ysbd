@@ -9,7 +9,9 @@
     <link rel="shortcut icon" type="png" href="../../assets/img/favicon.png" />
     <link rel="stylesheet" href="../../assets/css/main.css" type="text/css" />
     <link rel="stylesheet" href="../../assets/css/artist.css" type="text/css" />
-    <link rel="stylesheet" href="../../assets/css/glider.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../assets/css/owl.theme.default.min.css">
+
     <title>YSBD | Suonee</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -107,34 +109,25 @@
                 </p>
             </div>
 
-            <h3>Ses sorties</h3>
-            <div class="glider-contain mutiple">
+            <div class="text">
+                <h3>Ses sorties</h3>
 
-                <button class="glider-prev">
-                    <i class="fa fa-chevron-left"></i>
-                </button>
-
-                <div class="glider">
-                    <figure>
+                <div id="wrapper" style="height: 270px !important;">
+                    <div id="slider-area" class="owl-carousel owl-theme">
                         <a target="_blank" href="https://bit.ly/2kIre2M">
-                            <img src="../../assets/img/artists/suonee/releases/10-aniversario-vol-03.jpg" alt="">
+                            <div
+                                style="background-image: url(../../assets/img/artists/suonee/releases/10-aniversario-vol-03.jpg">
+                            </div>
                             <blockquote>
                                 10 Aniversario vol.03 EP - VA “Sonar Contact” w/ Vadim Oslov - Azekka
                             </blockquote>
                             <figcaption>Agua y Sed</figcaption>
                         </a>
-                    </figure>
+                    </div>
                 </div>
-
-                <button class="glider-next">
-                    <i class="fa fa-chevron-right"></i>
-                </button>
-
-                <div id="dots" class="glider-dots"></div>
             </div>
 
             <div class="text">
-
                 <h3>Ses sets</h3>
 
                 <p>Groove, est le maître mot, sourire aux lèvres assuré ! Il a joué aux Îlots Électroniques à Tours, au
@@ -160,18 +153,19 @@
                 </p>
             </div>
 
+            <footer>
+                <!-- <p class="copyright"><a href="www.crabby-kobo.com">Crabby Kōbō</a> design and production <br> © Copyright 2020
+                    YSBD | All
+                    rights
+                    reserved</p> -->
+                <p class="copyright"><a href="www.crabby-kobo.com">Conception et réalisation Crabby Kōbō</a><br> ©
+                    Copyright
+                    2020
+                    YSBD | Tous droits réservés</p>
+            </footer>
+
         </div>
     </div>
-
-    <footer>
-        <!-- <p class="copyright"><a href="www.crabby-kobo.com">Crabby Kōbō</a> design and production <br> © Copyright 2020
-            YSBD | All
-            rights
-            reserved</p> -->
-        <p class="copyright"><a href="www.crabby-kobo.com">Conception et réalisation Crabby Kōbō</a><br> © Copyright
-            2020
-            YSBD | Tous droits réservés</p>
-    </footer>
 
     <script>
         var overlay = document.getElementById('overlay');
@@ -186,19 +180,36 @@
         });
     </script>
 
-    <script src="../../assets/js/glider.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="../../assets/js/owl.carousel.min.js"></script>
 
     <script>
-        new Glider(document.querySelector('.glider'), {
-            slidesToShow: 2.5,
-            // slidesToScroll: 2,
-            draggable: false,
-            dots: '#dots',
-            // arrows: {
-            //     prev: '.glider-prev',
-            //     next: '.glider-next'
-            // }
-        })
+        $(document).ready(function () {
+            var owl = $('#slider-area');
+            owl.owlCarousel({
+                // loop: true,
+                margin: 10,
+                // nav: true,
+                // autoplay: true,
+                // autoplayTimeout: 1700,
+                // autoplayHoverPause: true,
+                responsive: {
+                    // breakpoint from 0 up
+                    0: {
+                        items: 1
+                    },
+                    // breakpoint from 600 up
+                    600: {
+                        items: 2
+                    },
+                    // breakpoint from 1000 up
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+        });
     </script>
 
 </body>

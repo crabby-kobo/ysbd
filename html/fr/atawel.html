@@ -9,7 +9,9 @@
     <link rel="shortcut icon" type="png" href="../../assets/img/favicon.png" />
     <link rel="stylesheet" href="../../assets/css/main.css" type="text/css" />
     <link rel="stylesheet" href="../../assets/css/artist.css" type="text/css" />
-    <link rel="stylesheet" href="../../assets/css/glider.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../assets/css/owl.theme.default.min.css">
+
     <title>YSBD | Atawël</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -111,41 +113,32 @@
                 </p>
             </div>
 
-            <h3>Ses sorties</h3>
-            <div class="glider-contain mutiple">
+            <div class="text">
+                <h3>Ses sorties</h3>
 
-                <button class="glider-prev">
-                    <i class="fa fa-chevron-left"></i>
-                </button>
-
-                <div class="glider">
-                    <figure>
+                <div id="wrapper" style="height: 230px !important;">
+                    <div id="slider-area" class="owl-carousel owl-theme">
                         <a target="_blank" href="https://soundcloud.com/aurore404records/sets/cut-a-rug-001">
-                            <img src="../../assets/img/artists/atawel/releases/cut-a-rug.jpg" alt="">
+                            <div style="background-image: url(../../assets/img/artists/atawel/releases/cut-a-rug.jpg">
+                            </div>
                             <blockquote>
                                 Cut A Rug 001 (VA) “Car Stereo”
                             </blockquote>
                             <figcaption>Aurore 404</figcaption>
                         </a>
-                    </figure>
 
-                    <figure>
                         <a target="_blank"
                             href="https://soundcloud.com/aurore404records/sets/au404e001-various-artists-avec">
-                            <img src="../../assets/img/artists/atawel/releases/avec-ou-sans-sucre.jpg" alt="">
+                            <div
+                                style="background-image: url(../../assets/img/artists/atawel/releases/avec-ou-sans-sucre.jpg">
+                            </div>
                             <blockquote>
                                 Avec Ou Sans Sucre ? (VA) “Kiss Kiss Bang Bang”
                             </blockquote>
                             <figcaption>Aurore 404</figcaption>
                         </a>
-                    </figure>
+                    </div>
                 </div>
-
-                <button class="glider-next">
-                    <i class="fa fa-chevron-right"></i>
-                </button>
-
-                <div id="dots" class="glider-dots"></div>
             </div>
 
             <div class="text">
@@ -167,18 +160,19 @@
                 </p>
             </div>
 
+            <footer>
+                <!-- <p class="copyright"><a href="www.crabby-kobo.com">Crabby Kōbō</a> design and production <br> © Copyright 2020
+                    YSBD | All
+                    rights
+                    reserved</p> -->
+                <p class="copyright"><a href="www.crabby-kobo.com">Conception et réalisation Crabby Kōbō</a><br> ©
+                    Copyright
+                    2020
+                    YSBD | Tous droits réservés</p>
+            </footer>
+
         </div>
     </div>
-
-    <footer>
-        <!-- <p class="copyright"><a href="www.crabby-kobo.com">Crabby Kōbō</a> design and production <br> © Copyright 2020
-            YSBD | All
-            rights
-            reserved</p> -->
-        <p class="copyright"><a href="www.crabby-kobo.com">Conception et réalisation Crabby Kōbō</a><br> © Copyright
-            2020
-            YSBD | Tous droits réservés</p>
-    </footer>
 
     <script>
         var overlay = document.getElementById('overlay');
@@ -193,20 +187,38 @@
         });
     </script>
 
-    <script src="../../assets/js/glider.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="../../assets/js/owl.carousel.min.js"></script>
 
     <script>
-        new Glider(document.querySelector('.glider'), {
-            slidesToShow: 2.5,
-            // slidesToScroll: 2,
-            draggable: false,
-            dots: '#dots',
-            // arrows: {
-            //     prev: '.glider-prev',
-            //     next: '.glider-next'
-            // }
-        })
+        $(document).ready(function () {
+            var owl = $('#slider-area');
+            owl.owlCarousel({
+                // loop: true,
+                margin: 10,
+                // nav: true,
+                // autoplay: true,
+                // autoplayTimeout: 1700,
+                // autoplayHoverPause: true,
+                responsive: {
+                    // breakpoint from 0 up
+                    0: {
+                        items: 1
+                    },
+                    // breakpoint from 600 up
+                    600: {
+                        items: 2
+                    },
+                    // breakpoint from 1000 up
+                    1000: {
+                        items: 2
+                    }
+                }
+            });
+        });
     </script>
+
 
 </body>
 

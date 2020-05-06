@@ -9,7 +9,9 @@
     <link rel="shortcut icon" type="png" href="../../assets/img/favicon.png" />
     <link rel="stylesheet" href="../../assets/css/main.css" type="text/css" />
     <link rel="stylesheet" href="../../assets/css/artist.css" type="text/css" />
-    <link rel="stylesheet" href="../../assets/css/glider.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../assets/css/owl.theme.default.min.css">
+
     <title>YSBD | Baloonarium</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -120,36 +122,32 @@
                 </p>
             </div>
 
-            <h3>Ses sorties</h3>
-            <div class="glider-contain mutiple">
+            <div class="text">
+                <h3>Ses sorties</h3>
 
-                <div class="glider">
-                    <figure>
+                <div id="wrapper" style="height: 230px !important;">
+                    <div id="slider-area" class="owl-carousel owl-theme">
                         <a target="_blank" href="https://soundcloud.com/gregoire-bigot/popular-tracks">
-                            <img src="../../assets/img/artists/baloonarium/releases/la-vague-du-matin.jpeg" alt="">
+                            <div
+                                style="background-image: url(../../assets/img/artists/baloonarium/releases/la-vague-du-matin.jpeg">
+                            </div>
                             <blockquote>
                                 “La vague du matin” + “La marche du singe en kimono”
                             </blockquote>
                             <figcaption>Lanterne Rouge</figcaption>
                         </a>
-                    </figure>
 
-                    <figure>
                         <a target="_blank" href="https://soundcloud.com/aurore404records/sets/cut-a-rug-001">
-                            <img src="../../assets/img/artists/baloonarium/releases/cut-a-rug.jpg" alt="">
+                            <div
+                                style="background-image: url(../../assets/img/artists/baloonarium/releases/cut-a-rug.jpg">
+                            </div>
                             <blockquote>
                                 Cut A Rug 001 (VA) “Astro Cocktail”
                             </blockquote>
                             <figcaption>Aurore 404</figcaption>
                         </a>
-                    </figure>
+                    </div>
                 </div>
-
-                <button class="glider-next">
-                    <i class="fa fa-chevron-right"></i>
-                </button>
-
-                <div id="dots" class="glider-dots"></div>
             </div>
 
             <div class="text">
@@ -201,19 +199,36 @@
         });
     </script>
 
-    <script src="../../assets/js/glider.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="../../assets/js/owl.carousel.min.js"></script>
 
     <script>
-        new Glider(document.querySelector('.glider'), {
-            slidesToShow: 4.5,
-            // slidesToScroll: 2,
-            draggable: false,
-            dots: '#dots',
-            // arrows: {
-            //     prev: '.glider-prev',
-            //     next: '.glider-next'
-            // }
-        })
+        $(document).ready(function () {
+            var owl = $('#slider-area');
+            owl.owlCarousel({
+                // loop: true,
+                margin: 10,
+                // nav: true,
+                // autoplay: true,
+                // autoplayTimeout: 1700,
+                // autoplayHoverPause: true,
+                responsive: {
+                    // breakpoint from 0 up
+                    0: {
+                        items: 1
+                    },
+                    // breakpoint from 600 up
+                    600: {
+                        items: 2
+                    },
+                    // breakpoint from 1000 up
+                    1000: {
+                        items: 2
+                    }
+                }
+            });
+        });
     </script>
 
 </body>

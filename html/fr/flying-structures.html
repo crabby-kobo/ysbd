@@ -9,7 +9,9 @@
     <link rel="shortcut icon" type="png" href="../../assets/img/favicon.png" />
     <link rel="stylesheet" href="../../assets/css/main.css" type="text/css" />
     <link rel="stylesheet" href="../../assets/css/artist.css" type="text/css" />
-    <link rel="stylesheet" href="../../assets/css/glider.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../assets/css/owl.theme.default.min.css">
+
     <title>YSBD | Flying Structures</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -148,19 +150,36 @@
         });
     </script>
 
-    <script src="../../assets/js/glider.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="../../assets/js/owl.carousel.min.js"></script>
 
     <script>
-        new Glider(document.querySelector('.glider'), {
-            slidesToShow: 2.5,
-            // slidesToScroll: 2,
-            draggable: false,
-            dots: '#dots',
-            // arrows: {
-            //     prev: '.glider-prev',
-            //     next: '.glider-next'
-            // }
-        })
+        $(document).ready(function () {
+            var owl = $('#slider-area');
+            owl.owlCarousel({
+                loop: true,
+                margin: 10,
+                // nav: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                responsive: {
+                    // breakpoint from 0 up
+                    0: {
+                        items: 1
+                    },
+                    // breakpoint from 600 up
+                    600: {
+                        items: 2
+                    },
+                    // breakpoint from 1000 up
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+        });
     </script>
 
 </body>

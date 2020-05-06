@@ -9,7 +9,8 @@
     <link rel="shortcut icon" type="png" href="../../assets/img/favicon.png" />
     <link rel="stylesheet" href="../../assets/css/main.css" type="text/css" />
     <link rel="stylesheet" href="../../assets/css/artist.css" type="text/css" />
-    <link rel="stylesheet" href="../../assets/css/glider.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../assets/css/owl.theme.default.min.css">
 
     <title>YSBD | Sichuan</title>
 
@@ -118,44 +119,42 @@
                 </p>
             </div>
 
-            <h3>Ses sorties</h3>
-            <div class="glider-contain mutiple">
-
-                <div class="glider">
-                    <figure>
+            <div class="text">
+                <h3>Ses sorties</h3>
+                <div id="wrapper" style="height: 250px !important;">
+                    <div id="slider-area" class="owl-carousel owl-theme">
                         <a target="_blank"
                             href="https://soundcloud.com/normandyrecords/preview-nrmnd006-sichuan?in=normandyrecords/sets/normandy-preview">
-                            <img src="../../assets/img/artists/sichuan/releases/nrmnd006.jpg" alt="">
+                            <div style="background-image: url(../../assets/img/artists/sichuan/releases/nrmnd006.jpg">
+                            </div>
                             <blockquote>
                                 NRMND006 EP
                             </blockquote>
                             <figcaption>Normandy Records</figcaption>
                         </a>
-                    </figure>
 
-                    <figure>
                         <a target="_blank"
                             href="https://soundcloud.com/recordeep-mag/premiere-sichuan-aquario-nrmnd003?in=normandyrecords/sets/normandy-premiere">
-                            <img src="../../assets/img/artists/sichuan/releases/nrmnd003.jpg" alt="">
+                            <div style="background-image: url(../../assets/img/artists/sichuan/releases/nrmnd003.jpg">
+                            </div>
                             <blockquote>
                                 NRMND003 EP (VA) Sichuan “Aquario”
                             </blockquote>
                             <figcaption>Normandy Records</figcaption>
                         </a>
-                    </figure>
 
-                    <figure>
                         <a target="_blank" href="https://www.youtube.com/watch?v=fr_Bt-Hm6ds">
-                            <img src="../../assets/img/artists/sichuan/releases/from-da-eats-1.jpg" alt="">
+                            <div
+                                style="background-image: url(../../assets/img/artists/sichuan/releases/from-da-eats-1.jpg">
+                            </div>
                             <blockquote>
                                 From da East #1 (VA) Ilyes & Sichuan “Homie Therapy”
                             </blockquote>
                             <figcaption>Increase The Groove</figcaption>
                         </a>
-                    </figure>
-                </div>
 
-                <div id="dots" class="glider-dots"></div>
+                    </div>
+                </div>
             </div>
 
             <div class="text">
@@ -163,7 +162,8 @@
                 <h3>Ses sets</h3>
 
                 <p>Totalement séduit par le côté dancefloor et universel de la musique électronique, c'est cette
-                    sensation qu'il va tenter de transmettre à son public grâce à ses dernières trouvailles dénichées
+                    sensation qu'il va tenter de transmettre à son public grâce à ses dernières trouvailles
+                    dénichées
                     chez ses disquaires favoris entre Rave, Deep, Old School et House.
                 </p>
             </div>
@@ -184,18 +184,22 @@
                 </p>
             </div>
 
+            <footer>
+                <!-- <p class="copyright"><a href="www.crabby-kobo.com">Crabby Kōbō</a> design and production <br> © Copyright 2020
+                    YSBD | All
+                    rights
+                    reserved</p> -->
+                <p class="copyright"><a href="www.crabby-kobo.com">Conception et réalisation Crabby Kōbō</a><br>
+                    ©
+                    Copyright
+                    2020
+                    YSBD | Tous droits réservés</p>
+            </footer>
+
         </div>
     </div>
 
-    <footer>
-        <!-- <p class="copyright"><a href="www.crabby-kobo.com">Crabby Kōbō</a> design and production <br> © Copyright 2020
-            YSBD | All
-            rights
-            reserved</p> -->
-        <p class="copyright"><a href="www.crabby-kobo.com">Conception et réalisation Crabby Kōbō</a><br> © Copyright
-            2020
-            YSBD | Tous droits réservés</p>
-    </footer>
+
 
     <script>
         var overlay = document.getElementById('overlay');
@@ -216,17 +220,35 @@
         document.body.scroll = "yes";
     </script>
 
-    <script src="../../assets/js/glider.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="../../assets/js/owl.carousel.min.js"></script>
 
     <script>
-        new Glider(document.querySelector('.glider'), {
-            slidesToShow: 3,
-            draggable: false,
-            dots: '#dots',
-            // arrows: {
-            //     prev: '.glider-prev',
-            //     next: '.glider-next'
-            // }
+        $(document).ready(function () {
+            var owl = $('#slider-area');
+            owl.owlCarousel({
+                // loop: true,
+                margin: 10,
+                // nav: true,
+                // autoplay: true,
+                // autoplayTimeout: 1700,
+                // autoplayHoverPause: true,
+                responsive: {
+                    // breakpoint from 0 up
+                    0: {
+                        items: 1
+                    },
+                    // breakpoint from 600 up
+                    600: {
+                        items: 2
+                    },
+                    // breakpoint from 1000 up
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
         })
     </script>
 

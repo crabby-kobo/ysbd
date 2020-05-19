@@ -40,8 +40,8 @@
 .content .l-col .rs a {
   color: #fff;
   background: var(--red);
-  padding: 0.3em 0.6em;
-  margin-right: 0.3em;
+  padding: .3em .6em;
+  margin-right: .3em;
 }
 
 .content .r-col {
@@ -82,4 +82,4 @@
 .content .r-col .contact:hover a {
   color: var(--red);
 }
-/*# sourceMappingURL=annexes.css.map */
+/*# sourceMappingURL=about.css.map */

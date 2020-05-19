@@ -32,11 +32,10 @@
             margin-top: 3em;
 
             a {
-                // color: var(--red);
                 color: #fff;
                 background: var(--red);
-                padding: 0.3em 0.6em;
-                margin-right: 0.3em;
+                padding: .3em .6em;
+                margin-right: .3em;
             }
         }
     }
@@ -47,7 +46,6 @@
         grid-area: rcol;
         width: 50%;
         height: 100vh;
-        // padding-top: 14em;
         position: fixed;
         left: 50%;
         background: var(--red);

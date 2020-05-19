@@ -1296,6 +1296,8 @@ html body nav {
           transform: scaleX(0);
   -webkit-transform-origin: right;
           transform-origin: right;
+  -webkit-box-shadow: 0 0 5px grey;
+          box-shadow: 0 0 5px grey;
 }
 
 html body nav .close-btn {

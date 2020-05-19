@@ -1,0 +1,85 @@
+/* TABLE OF CONTENTS :
+
+1. Content
+2. Left column
+3. Right column */
+/* 1. GENERAL */
+.content {
+  width: 100%;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "lcol rcol";
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  /* 2. LEFT COLUMN */
+  /* 3. RIGHT COLUMN */
+}
+
+.content .l-col {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: lcol;
+  padding: 8em 6em 0 6em;
+  overflow-y: hidden;
+}
+
+.content .l-col h3 {
+  margin-top: 4.9em;
+}
+
+.content .l-col .rs {
+  text-transform: uppercase;
+  font-family: "Avenir Black", sans-serif;
+  font-size: 1em;
+  margin-top: 3em;
+}
+
+.content .l-col .rs a {
+  color: #fff;
+  background: var(--red);
+  padding: 0.3em 0.6em;
+  margin-right: 0.3em;
+}
+
+.content .r-col {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: rcol;
+  width: 50%;
+  height: 100vh;
+  position: fixed;
+  left: 50%;
+  background: var(--red);
+  overflow-y: hidden;
+}
+
+.content .r-col .contact {
+  position: relative;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-family: "Avenir Black", sans-serif;
+  font-size: 3em;
+  line-height: 0;
+  text-align: center;
+  padding: 1.5em 0;
+  margin: 0;
+}
+
+.content .r-col .contact a {
+  color: #fff;
+}
+
+.content .r-col .contact:hover {
+  background: #fff;
+}
+
+.content .r-col .contact:hover a {
+  color: var(--red);
+}
+/*# sourceMappingURL=annexes.css.map */

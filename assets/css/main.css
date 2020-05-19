@@ -1511,9 +1511,6 @@ html body header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: header;
-  background-color: #fff;
-  -webkit-box-shadow: 0 0 5px #000;
-          box-shadow: 0 0 5px #000;
   height: 1.9em;
   padding: 2em 4em;
   display: -ms-grid;

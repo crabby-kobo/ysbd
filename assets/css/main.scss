@@ -1305,7 +1305,7 @@ html {
             display: none;
             transform: scaleX(0);
             transform-origin: right;
-            box-shadow: 0 0 5px grey;
+            // box-shadow: 0 0 5px 1px #000;
 
             .close-btn {
                 padding-top: .4em;
@@ -1448,7 +1448,7 @@ html {
             left: 0;
             grid-area: header;
             background-color: #fff;
-            box-shadow: 0 0 10px grey;
+            box-shadow: 0 0 5px #000;
             height: 1.9em;
             padding: 2em 4em;
             display: grid;

@@ -1296,8 +1296,6 @@ html body nav {
           transform: scaleX(0);
   -webkit-transform-origin: right;
           transform-origin: right;
-  -webkit-box-shadow: 0 0 5px grey;
-          box-shadow: 0 0 5px grey;
 }
 
 html body nav .close-btn {
@@ -1514,8 +1512,8 @@ html body header {
   -ms-grid-column: 1;
   grid-area: header;
   background-color: #fff;
-  -webkit-box-shadow: 0 0 10px grey;
-          box-shadow: 0 0 10px grey;
+  -webkit-box-shadow: 0 0 5px #000;
+          box-shadow: 0 0 5px #000;
   height: 1.9em;
   padding: 2em 4em;
   display: -ms-grid;

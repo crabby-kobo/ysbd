@@ -17,6 +17,13 @@ header {
     padding: 8em 5.8rem 1rem 5.8rem;
 }
 
+@media all and (max-width: 580px) {
+    .content {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
 .gallery-title {
     grid-area: title;
     margin: .8em auto auto;
@@ -59,24 +66,6 @@ header {
                 color: #fff;
             }
         }
-
-        @media all and (max-width: 414px) {
-            li {
-                display: block;
-            }
-        }
-    }
-
-    @media all and (max-width: 580px) {
-        #filters {
-            text-align: center;
-        }
-    }
-}
-
-@media all and (max-width: 414px) {
-    .filters {
-        margin: 90px 30px 15px 30px;
     }
 }
 
@@ -127,6 +116,12 @@ header {
             }
         }
 
+        @media all and (max-width: 850px) {
+            .artist {
+                width: 100%;
+            }
+        }
+
         .artist:hover {
             img {
                 opacity: .5;
@@ -144,4 +139,10 @@ header {
 
 footer {
     margin-left: 5.8rem;
+}
+
+@media all and (max-width: 580px) {
+    footer {
+        margin-left: 2rem;
+    }
 }

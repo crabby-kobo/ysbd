@@ -15,6 +15,13 @@ header {
   padding: 8em 5.8rem 1rem 5.8rem;
 }
 
+@media all and (max-width: 580px) {
+  .content {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
 .gallery-title {
   grid-area: title;
   margin: .8em auto auto;
@@ -55,24 +62,6 @@ header {
 .filters #filters li span.active {
   background: var(--main);
   color: #fff;
-}
-
-@media all and (max-width: 414px) {
-  .filters #filters li {
-    display: block;
-  }
-}
-
-@media all and (max-width: 580px) {
-  .filters #filters {
-    text-align: center;
-  }
-}
-
-@media all and (max-width: 414px) {
-  .filters {
-    margin: 90px 30px 15px 30px;
-  }
 }
 
 /* 4. GALLERY */
@@ -127,6 +116,12 @@ header {
   transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
 }
 
+@media all and (max-width: 850px) {
+  #gallery .artists-gallery .artist {
+    width: 100%;
+  }
+}
+
 #gallery .artists-gallery .artist:hover img {
   opacity: .5;
   -webkit-transform: translate3d(0, 0, 0);
@@ -140,5 +135,11 @@ header {
 /* 5. FOOTER */
 footer {
   margin-left: 5.8rem;
+}
+
+@media all and (max-width: 580px) {
+  footer {
+    margin-left: 2rem;
+  }
 }
 /*# sourceMappingURL=booking-roster.css.map */

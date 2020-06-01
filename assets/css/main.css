@@ -1314,7 +1314,7 @@ html body nav .close-btn {
 html body nav ul {
   list-style-type: none;
   padding: 0;
-  margin: 8.5em 0;
+  margin: 17% 0;
 }
 
 html body nav ul a {
@@ -1328,7 +1328,13 @@ html body nav ul a {
 
 html body nav ul li {
   opacity: 0;
-  padding: 3em 5em;
+  padding: 7% 5em;
+}
+
+@media all and (max-width: 1180px) {
+  html body nav ul a {
+    font-size: 1.6em;
+  }
 }
 
 html body nav ul li:hover {
@@ -1586,6 +1592,18 @@ html body header .menu .language .white-header:hover {
   color: var(--second);
 }
 
+@media all and (max-width: 580px) {
+  html body header .menu .language {
+    margin-right: 4.5em;
+  }
+}
+
+@media all and (max-width: 580px) {
+  html body header {
+    padding: 2em 0;
+  }
+}
+
 html body .content {
   background: #fff;
 }
@@ -1597,6 +1615,24 @@ html body h2 {
   font-size: 3.5em;
   margin-bottom: .3em;
   color: var(--main);
+}
+
+@media all and (max-width: 850px) {
+  html body h2 {
+    font-size: 3em;
+  }
+}
+
+@media all and (max-width: 700px) {
+  html body h2 {
+    font-size: 2.5em;
+  }
+}
+
+@media all and (max-width: 580px) {
+  html body h2 {
+    font-size: 2em;
+  }
 }
 
 html body h3 {

@@ -1306,8 +1306,16 @@ html {
             display: none;
             transform: scaleX(0);
             transform-origin: right;
+            // display: grid;
+            // grid-template-areas:
+            //     "close"
+            //     "links";
+            // grid-template-columns: 1fr;
+            // grid-template-rows: 10rem auto;
+
 
             .close-btn {
+                // grid-area: close;
                 padding-top: 2.4em;
                 padding-right: 6em;
                 width: 20px;
@@ -1316,11 +1324,20 @@ html {
                 opacity: 0;
             }
 
+            @media all and (max-width: 580px) {
+                .close-btn {
+                    padding-right: 2em;
+                }
+            }
+
             ul {
+                // grid-area: links;
+                position: absolute;
+                width: 100%;
+                top: 50%;
+                transform: translateY(-50%);
                 list-style-type: none;
                 padding: 0;
-                // margin: 8.5em 0;
-                margin: 17% 0;
 
                 a {
                     color: #fff;
@@ -1331,15 +1348,48 @@ html {
                     padding: 0;
                 }
 
+                @media all and (max-width: 580px) {
+                    a {
+                        font-size: 1.5em;
+                    }
+                }
+
+                @media all and (max-height: 480px) {
+                    a {
+                        font-size: 1.3em;
+                    }
+                }
+
                 li {
                     opacity: 0;
-                    // padding: 3em 5em;
                     padding: 7% 5em;
                 }
 
-                @media all and (max-width: 1180px) {
-                    a {
-                        font-size: 1.6em;
+                @media all and (max-width: 580px) {
+                    li {
+                        padding-right: 2em;
+                        padding-left: 2em;
+                    }
+                }
+
+                @media all and (max-height: 620px) {
+                    li {
+                        padding-top: 4%;
+                        padding-bottom: 4%;
+                    }
+                }
+
+                @media all and (max-height: 520px) {
+                    li {
+                        padding-top: 3%;
+                        padding-bottom: 3%;
+                    }
+                }
+
+                @media all and (max-height: 340px) {
+                    li {
+                        padding-top: 2%;
+                        padding-bottom: 2%;
                     }
                 }
 
@@ -1350,6 +1400,12 @@ html {
                         color: var(--main);
                     }
                 }
+            }
+        }
+
+        @media all and (max-width: 850px) {
+            nav {
+                width: 100%;
             }
         }
 

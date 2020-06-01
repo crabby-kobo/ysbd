@@ -179,6 +179,50 @@
             margin: 0;
           }
         }
+
+        #artist-wrapper {
+          position: relative;
+          height: 100%;
+          margin-top: 1.5em;
+          margin-bottom: 0;
+          padding: 0;
+
+          #slider-area {
+            position: absolute;
+            margin: 0;
+
+            .owl-item div {
+              height: 170px;
+              width: 170px;
+              background-repeat: no-repeat;
+              -webkit-backface-size: cover;
+              background-size: cover;
+              background-position: 50% 50%;
+              margin: 0 auto 10px auto;
+            }
+
+            blockquote {
+              margin: 0;
+              font-family: "Avenir Black", sans-serif;
+              font-weight: bold;
+              font-style: normal;
+              color: var(--main);
+              text-transform: uppercase;
+              font-size: 0.8em;
+              text-align: center;
+            }
+
+            figcaption {
+              font-family: "Avenir Book", sans-serif;
+              font-weight: normal;
+              font-style: normal;
+              color: #000;
+              font-size: 0.8em;
+              text-align: center;
+              margin: 0;
+            }
+          }
+        }
       }
     }
   }

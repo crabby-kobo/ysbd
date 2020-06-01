@@ -27,7 +27,7 @@
 }
 
 .content .l-col h2 {
-  font-size: 2.9em;
+  font-size: 3em;
 }
 
 .content .l-col p {
@@ -49,7 +49,7 @@
   left: 50%;
   background: var(--second);
   overflow-y: hidden;
-  padding-top: 21%;
+  padding-top: 18%;
 }
 
 .content .r-col p {

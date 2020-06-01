@@ -1309,7 +1309,7 @@ html {
 
             .close-btn {
                 padding-top: 2.4em;
-                padding-right: 4em;
+                padding-right: 6em;
                 width: 20px;
                 float: right;
                 cursor: pointer;
@@ -1467,7 +1467,8 @@ html {
                 display: inline-block;
 
                 .menu-btn {
-                    margin-top: .4em;
+                    margin-top: .3em;
+                    margin-right: 2rem;
                     width: 20px;
                     float: right;
                     cursor: pointer;
@@ -1477,7 +1478,7 @@ html {
                     position: absolute;
                     top: 0;
                     right: 0;
-                    margin: 1em 7em 0 auto;
+                    margin: 1em 8.5em 0 auto;
 
                     p {
                         border: solid 2px;

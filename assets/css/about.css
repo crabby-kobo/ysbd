@@ -39,9 +39,14 @@
 
 .content .l-col .rs a {
   color: #fff;
-  background: var(--red);
+  background: var(--main);
   padding: .3em .6em;
   margin-right: .3em;
+}
+
+.content .l-col footer {
+  position: fixed;
+  bottom: 0;
 }
 
 .content .r-col {
@@ -52,7 +57,7 @@
   height: 100vh;
   position: fixed;
   left: 50%;
-  background: var(--red);
+  background: var(--second);
   overflow-y: hidden;
 }
 
@@ -80,6 +85,6 @@
 }
 
 .content .r-col .contact:hover a {
-  color: var(--red);
+  color: var(--second);
 }
 /*# sourceMappingURL=about.css.map */

@@ -70,13 +70,13 @@
     height: 19px;
     font-size: 21px;
     background-color: #fff;
-    border: solid 2px var(--red);
+    border: solid 2px var(--main);
     border-radius: 50%;
 }
 
 .socicon:hover {
     color: #fff;
-    background-color: var(--red);
+    background-color: var(--main);
 }
 
 .socicon-eitaa:before {
@@ -1271,12 +1271,15 @@
 /* 2. COLORS */
 
 :root {
-    --red: #e20613;
+    --main: #e20613;
+    // --second: #b8b8b8;
+    --second: #505050;
 }
 
 /* 3. GENERAL */
 
 html {
+    background: #fff;
 
     body {
         background: #fff;
@@ -1297,8 +1300,11 @@ html {
             z-index: 5;
             position: fixed;
             right: 0;
-            background: var(--red);
-            padding: 2em;
+            background: var(--main);
+            // background: var(--second);
+            // background: #fff;
+            // background: #000;
+            // padding: 2em;
             width: 50%;
             height: 100vh;
             box-sizing: border-box;
@@ -1308,8 +1314,8 @@ html {
             // box-shadow: 0 0 5px 1px #000;
 
             .close-btn {
-                padding-top: .4em;
-                padding-right: 2em;
+                padding-top: 2.4em;
+                padding-right: 4em;
                 width: 20px;
                 float: right;
                 cursor: pointer;
@@ -1318,35 +1324,54 @@ html {
 
             ul {
                 list-style-type: none;
-                margin: 7.7rem auto 0 3.5rem;
+                // margin: 7.7rem auto 0 3.5rem;
                 padding: 0;
+                margin: 8.5em 0;
 
                 a {
                     color: #fff;
+                    // color: var(--main);
                     font-family: "Avenir Black", sans-serif;
                     font-weight: bold;
-                    font-size: 1.5em;
+                    font-size: 2em;
                     text-transform: uppercase;
+                    padding: 0;
                 }
 
-                span {
-                    color: #fff;
-                    font-weight: normal;
-                    display: block;
-                    font-size: 1.2em;
-                    margin-top: 5px;
 
-                    a {
-                        font-family: "Avenir Light", sans-serif;
-                        font-weight: light;
-                        font-size: 1em;
-                        text-transform: capitalize;
-                    }
-                }
+
+                // span {
+                //     color: #fff;
+                //     font-weight: normal;
+                //     display: block;
+                //     font-size: 1.2em;
+                //     margin-top: 5px;
+
+                //     a {
+                //         font-family: "Avenir Light", sans-serif;
+                //         font-weight: light;
+                //         font-size: 1em;
+                //         text-transform: capitalize;
+                //     }
+                // }
 
                 li {
                     opacity: 0;
-                    padding: .9em;
+                    padding: 3em 5em;
+                }
+
+                li:hover {
+                    // border-bottom: solid 5px #fff;
+                    background: #fff;
+                    // background: var(--main);
+
+                    a {
+                        color: var(--main);
+                        // color: var(--second);
+                        // color: #fff;
+                    }
+
+
                 }
             }
         }
@@ -1488,13 +1513,22 @@ html {
                     margin: 1em 7em 0 auto;
 
                     p {
-                        color: var(--red);
-                        border: solid 1.5px var(--red);
+                        border: solid 2px;
                         padding: 6px 6px 5px 6px;
                         font-size: .9em;
                         font-family: "Avenir Black", sans-serif;
                         font-weight: bold;
                         font-style: normal;
+                    }
+
+                    .red-header {
+                        color: var(--main);
+                        border-color: var(--main);
+                    }
+
+                    .white-header {
+                        color: #fff;
+                        border-color: #fff;
                     }
 
                     // .en {
@@ -1505,9 +1539,15 @@ html {
                     //     padding: 6px 6px 3px 5px;
                     // }
 
-                    p:hover {
+                    .red-header:hover {
+                        background-color: var(--main);
                         color: #fff;
-                        background-color: var(--red);
+                    }
+
+                    .white-header:hover {
+                        background-color: #fff;
+                        // color: var(--main);
+                        color: var(--second);
                     }
                 }
             }
@@ -1523,20 +1563,20 @@ html {
             text-transform: uppercase;
             font-size: 3.5em;
             margin-bottom: .3em;
-            color: var(--red);
+            color: var(--main);
         }
 
         h3 {
             font-family: "Avenir Black", sans-serif;
             font-weight: bold;
             text-transform: uppercase;
-            color: var(--red);
+            color: var(--main);
             margin-bottom: 0;
         }
 
         p {
             a {
-                color: var(--red);
+                color: var(--main);
             }
         }
 
@@ -1548,7 +1588,8 @@ html {
             padding: 2em 0;
 
             .copyright {
-                color: var(--red);
+                // color: var(--main);
+                color: #000;
                 font-family: 'Avenir Light';
                 font-weight: Light;
                 font-style: normal;
@@ -1557,7 +1598,7 @@ html {
 
                 a {
                     text-decoration: none;
-                    color: var(--red);
+                    color: #000;
                 }
             }
         }

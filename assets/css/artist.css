@@ -24,20 +24,28 @@
   grid-area: rcol;
   position: fixed;
   left: 50%;
+  height: 100vh;
+  width: 100%;
   overflow-y: hidden;
 }
 
 .content .r-col .photo {
   z-index: 0;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
 }
 
 .content .r-col .photo img {
-  height: 100vh;
+  height: 100%;
   width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline;
 }
 
 .content .r-col .contact {
-  background: var(--red);
+  background: var(--main);
   z-index: 1;
   position: fixed;
   bottom: 20%;
@@ -55,8 +63,8 @@
 }
 
 .content .r-col .contact p a {
-  text-decoration: underline;
-  color: #fff;
+  padding: 1px 8px;
+  background: #fff;
 }
 
 .content .l-col {
@@ -70,6 +78,16 @@
   height: auto;
 }
 
+.content .l-col span {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  background: #fff;
+  height: 6em;
+}
+
 .content .l-col .rs ul {
   margin-top: .3rem;
   margin-left: -3px;
@@ -78,7 +96,7 @@
 
 .content .l-col .rs ul a:link,
 .content .l-col .rs ul a:visited {
-  color: var(--red);
+  color: var(--main);
 }
 
 .content .l-col .rs li {
@@ -97,7 +115,7 @@
   margin-bottom: 1.3rem;
   font-family: "Avenir Black", sans-serif;
   padding: 4px 9px;
-  background: var(--red);
+  background: var(--main);
   color: #fff;
 }
 
@@ -114,7 +132,7 @@
 .content .l-col .text p em {
   font-size: 1.2em;
   font-family: "Avenir Black", sans-serif;
-  color: var(--red);
+  color: var(--main);
   font-weight: bold;
   font-style: normal;
   padding-right: 5px;
@@ -148,7 +166,7 @@
   font-family: "Avenir Black", sans-serif;
   font-weight: bold;
   font-style: normal;
-  color: var(--red);
+  color: var(--main);
   text-transform: uppercase;
   font-size: 0.8em;
   text-align: center;

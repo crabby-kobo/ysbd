@@ -1,10 +1,16 @@
 /* TABLE OF CONTENTS :
 
-1. General
-2. Gallery filters
-3. Gallery
-4. Footer */
-/* 1. GENERAL */
+1. Header
+2. General
+3. Gallery filters
+4. Gallery
+5. Footer */
+/* 1. HEADER */
+header {
+  background: #fff;
+}
+
+/* 2. GENERAL */
 .content {
   padding: 8em 5.8rem 1rem 5.8rem;
 }
@@ -18,7 +24,7 @@
   margin-bottom: 0;
 }
 
-/* 2. GALLERY FILTERS */
+/* 3. GALLERY FILTERS */
 .filters #filters {
   list-style: none;
   font-weight: 400;
@@ -43,11 +49,11 @@
 }
 
 .filters #filters li span:hover {
-  color: var(--red);
+  color: var(--main);
 }
 
 .filters #filters li span.active {
-  background: var(--red);
+  background: var(--main);
   color: #fff;
 }
 
@@ -69,7 +75,7 @@
   }
 }
 
-/* 3. GALLERY */
+/* 4. GALLERY */
 #gallery {
   margin-top: 2em;
 }
@@ -89,7 +95,7 @@
   float: left;
   overflow: hidden;
   width: 50%;
-  background: var(--red);
+  background: var(--main);
   cursor: pointer;
 }
 
@@ -131,7 +137,7 @@
   opacity: 1;
 }
 
-/* 4. FOOTER */
+/* 5. FOOTER */
 footer {
   margin-left: 5.8rem;
 }

@@ -62,13 +62,13 @@
   height: 19px;
   font-size: 21px;
   background-color: #fff;
-  border: solid 2px var(--red);
+  border: solid 2px var(--main);
   border-radius: 50%;
 }
 
 .socicon:hover {
   color: #fff;
-  background-color: var(--red);
+  background-color: var(--main);
 }
 
 .socicon-eitaa:before {
@@ -1261,10 +1261,15 @@
 
 /* 2. COLORS */
 :root {
-  --red: #e20613;
+  --main: #e20613;
+  --second: #505050;
 }
 
 /* 3. GENERAL */
+html {
+  background: #fff;
+}
+
 html body {
   background: #fff;
   font-family: "Avenir Book", sans-serif;
@@ -1285,8 +1290,7 @@ html body nav {
   z-index: 5;
   position: fixed;
   right: 0;
-  background: var(--red);
-  padding: 2em;
+  background: var(--main);
   width: 50%;
   height: 100vh;
   -webkit-box-sizing: border-box;
@@ -1299,8 +1303,8 @@ html body nav {
 }
 
 html body nav .close-btn {
-  padding-top: .4em;
-  padding-right: 2em;
+  padding-top: 2.4em;
+  padding-right: 4em;
   width: 20px;
   float: right;
   cursor: pointer;
@@ -1309,36 +1313,30 @@ html body nav .close-btn {
 
 html body nav ul {
   list-style-type: none;
-  margin: 7.7rem auto 0 3.5rem;
   padding: 0;
+  margin: 8.5em 0;
 }
 
 html body nav ul a {
   color: #fff;
   font-family: "Avenir Black", sans-serif;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 2em;
   text-transform: uppercase;
-}
-
-html body nav ul span {
-  color: #fff;
-  font-weight: normal;
-  display: block;
-  font-size: 1.2em;
-  margin-top: 5px;
-}
-
-html body nav ul span a {
-  font-family: "Avenir Light", sans-serif;
-  font-weight: light;
-  font-size: 1em;
-  text-transform: capitalize;
+  padding: 0;
 }
 
 html body nav ul li {
   opacity: 0;
-  padding: .9em;
+  padding: 3em 5em;
+}
+
+html body nav ul li:hover {
+  background: #fff;
+}
+
+html body nav ul li:hover a {
+  color: var(--main);
 }
 
 html body .show-menu {
@@ -1559,8 +1557,7 @@ html body header .menu .language {
 }
 
 html body header .menu .language p {
-  color: var(--red);
-  border: solid 1.5px var(--red);
+  border: solid 2px;
   padding: 6px 6px 5px 6px;
   font-size: .9em;
   font-family: "Avenir Black", sans-serif;
@@ -1568,9 +1565,24 @@ html body header .menu .language p {
   font-style: normal;
 }
 
-html body header .menu .language p:hover {
+html body header .menu .language .red-header {
+  color: var(--main);
+  border-color: var(--main);
+}
+
+html body header .menu .language .white-header {
   color: #fff;
-  background-color: var(--red);
+  border-color: #fff;
+}
+
+html body header .menu .language .red-header:hover {
+  background-color: var(--main);
+  color: #fff;
+}
+
+html body header .menu .language .white-header:hover {
+  background-color: #fff;
+  color: var(--second);
 }
 
 html body .content {
@@ -1583,19 +1595,19 @@ html body h2 {
   text-transform: uppercase;
   font-size: 3.5em;
   margin-bottom: .3em;
-  color: var(--red);
+  color: var(--main);
 }
 
 html body h3 {
   font-family: "Avenir Black", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
-  color: var(--red);
+  color: var(--main);
   margin-bottom: 0;
 }
 
 html body p a {
-  color: var(--red);
+  color: var(--main);
 }
 
 html body a {
@@ -1607,7 +1619,7 @@ html body footer {
 }
 
 html body footer .copyright {
-  color: var(--red);
+  color: #000;
   font-family: 'Avenir Light';
   font-weight: Light;
   font-style: normal;
@@ -1617,6 +1629,6 @@ html body footer .copyright {
 
 html body footer .copyright a {
   text-decoration: none;
-  color: var(--red);
+  color: #000;
 }
 /*# sourceMappingURL=main.css.map */

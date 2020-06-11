@@ -28,6 +28,15 @@
     background-size: cover;
   }
 
+  @media all and (max-width: 1130px) {
+    .r-col {
+      // top: 6em;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
   .contact {
     background: var(--main);
     z-index: 1;
@@ -52,6 +61,16 @@
   }
 }
 
+@media all and (max-width: 1130px) {
+  .content {
+    grid-template-areas:
+      "rcol"
+      "lcol";
+    grid-template-columns: auto;
+    grid-template-rows: 60% auto;
+  }
+}
+
 /* 3. LEFT COLUMN */
 
 .l-col {
@@ -70,6 +89,12 @@
     width: 50%;
     background: #fff;
     height: 6em;
+  }
+
+  @media all and (max-width: 1130px) {
+    #bg-header {
+      width: 100%;
+    }
   }
 
   .rs {
@@ -212,5 +237,17 @@
         }
       }
     }
+  }
+}
+
+@media all and (max-width: 1130px) {
+  .l-col {
+    // grid-area: lcol;
+    // z-index: 1;
+    // margin-top: 40%;
+    // background: none;
+    padding: 2em 6em 0 6em;
+    width: auto;
+    height: auto;
   }
 }

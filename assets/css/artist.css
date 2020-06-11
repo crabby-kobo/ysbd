@@ -31,6 +31,14 @@
   background-size: cover;
 }
 
+@media all and (max-width: 1130px) {
+  .content .r-col {
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
+
 .content .contact {
   background: var(--main);
   z-index: 1;
@@ -54,6 +62,16 @@
   background: #fff;
 }
 
+@media all and (max-width: 1130px) {
+  .content {
+        grid-template-areas: "rcol" "lcol";
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: 60% auto;
+        grid-template-rows: 60% auto;
+  }
+}
+
 /* 3. LEFT COLUMN */
 .l-col {
   -ms-grid-row: 1;
@@ -74,6 +92,12 @@
   width: 50%;
   background: #fff;
   height: 6em;
+}
+
+@media all and (max-width: 1130px) {
+  .l-col #bg-header {
+    width: 100%;
+  }
 }
 
 .l-col .rs ul {
@@ -214,5 +238,13 @@
   font-size: 0.8em;
   text-align: center;
   margin: 0;
+}
+
+@media all and (max-width: 1130px) {
+  .l-col {
+    padding: 2em 6em 0 6em;
+    width: auto;
+    height: auto;
+  }
 }
 /*# sourceMappingURL=artist.css.map */

@@ -15,7 +15,6 @@
   -ms-grid-rows: auto;
       grid-template-rows: auto;
   /* 2. RIGHT COLUMN */
-  /* 3. LEFT COLUMN */
 }
 
 .content .r-col {
@@ -25,26 +24,14 @@
   position: fixed;
   left: 50%;
   height: 100vh;
-  width: 100%;
   overflow-y: hidden;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
-.content .r-col .photo {
-  z-index: 0;
-  position: absolute;
-  height: 100vh;
-  width: 100%;
-}
-
-.content .r-col .photo img {
-  height: 100%;
-  width: auto;
-  margin-left: auto;
-  margin-right: auto;
-  display: inline;
-}
-
-.content .r-col .contact {
+.content .contact {
   background: var(--main);
   z-index: 1;
   position: fixed;
@@ -52,7 +39,7 @@
   width: 100%;
 }
 
-.content .r-col .contact p {
+.content .contact p {
   font-size: 1.6em;
   font-family: "Avenir Black", sans-serif;
   color: #fff;
@@ -62,12 +49,13 @@
   padding: 1em 3.5em;
 }
 
-.content .r-col .contact p a {
+.content .contact p a {
   padding: 1px 8px;
   background: #fff;
 }
 
-.content .l-col {
+/* 3. LEFT COLUMN */
+.l-col {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: lcol;
@@ -78,7 +66,7 @@
   height: auto;
 }
 
-.content .l-col span {
+.l-col span {
   z-index: 2;
   position: fixed;
   top: 0;
@@ -88,28 +76,28 @@
   height: 6em;
 }
 
-.content .l-col .rs ul {
+.l-col .rs ul {
   margin-top: .3rem;
   margin-left: -3px;
   padding: 0;
 }
 
-.content .l-col .rs ul a:link,
-.content .l-col .rs ul a:visited {
+.l-col .rs ul a:link,
+.l-col .rs ul a:visited {
   color: var(--main);
 }
 
-.content .l-col .rs li {
+.l-col .rs li {
   cursor: pointer;
   margin: 0 1px 2rem 1px;
 }
 
-.content .l-col h2 {
+.l-col h2 {
   margin-bottom: .2em;
   line-height: 1em;
 }
 
-.content .l-col .label {
+.l-col .label {
   display: inline-block;
   margin-top: -.5em;
   margin-bottom: 1.3rem;
@@ -119,17 +107,17 @@
   color: #fff;
 }
 
-.content .l-col .comment {
+.l-col .comment {
   font-style: italic;
   margin: 0;
 }
 
-.content .l-col .text {
+.l-col .text {
   margin-top: 1.8rem;
   margin-bottom: 2em;
 }
 
-.content .l-col .text p em {
+.l-col .text p em {
   font-size: 1.2em;
   font-family: "Avenir Black", sans-serif;
   color: var(--main);
@@ -138,7 +126,7 @@
   padding-right: 5px;
 }
 
-.content .l-col .text #wrapper {
+.l-col .text #wrapper {
   position: relative;
   height: 100%;
   margin-top: 1.5em;
@@ -146,12 +134,12 @@
   padding: 0;
 }
 
-.content .l-col .text #wrapper #slider-area {
+.l-col .text #wrapper #slider-area {
   position: absolute;
   margin: 0;
 }
 
-.content .l-col .text #wrapper #slider-area .owl-item div {
+.l-col .text #wrapper #slider-area .owl-item div {
   height: 170px;
   width: 170px;
   background-repeat: no-repeat;
@@ -161,7 +149,7 @@
   margin: 0 auto 10px auto;
 }
 
-.content .l-col .text #wrapper #slider-area blockquote {
+.l-col .text #wrapper #slider-area blockquote {
   margin: 0;
   font-family: "Avenir Black", sans-serif;
   font-weight: bold;
@@ -172,7 +160,7 @@
   text-align: center;
 }
 
-.content .l-col .text #wrapper #slider-area figcaption {
+.l-col .text #wrapper #slider-area figcaption {
   font-family: "Avenir Book", sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -182,7 +170,7 @@
   margin: 0;
 }
 
-.content .l-col .text #wrapper #artist-wrapper {
+.l-col .text #wrapper #artist-wrapper {
   position: relative;
   height: 100%;
   margin-top: 1.5em;
@@ -190,12 +178,12 @@
   padding: 0;
 }
 
-.content .l-col .text #wrapper #artist-wrapper #slider-area {
+.l-col .text #wrapper #artist-wrapper #slider-area {
   position: absolute;
   margin: 0;
 }
 
-.content .l-col .text #wrapper #artist-wrapper #slider-area .owl-item div {
+.l-col .text #wrapper #artist-wrapper #slider-area .owl-item div {
   height: 170px;
   width: 170px;
   background-repeat: no-repeat;
@@ -205,7 +193,7 @@
   margin: 0 auto 10px auto;
 }
 
-.content .l-col .text #wrapper #artist-wrapper #slider-area blockquote {
+.l-col .text #wrapper #artist-wrapper #slider-area blockquote {
   margin: 0;
   font-family: "Avenir Black", sans-serif;
   font-weight: bold;
@@ -216,7 +204,7 @@
   text-align: center;
 }
 
-.content .l-col .text #wrapper #artist-wrapper #slider-area figcaption {
+.l-col .text #wrapper #artist-wrapper #slider-area figcaption {
   font-family: "Avenir Book", sans-serif;
   font-weight: normal;
   font-style: normal;

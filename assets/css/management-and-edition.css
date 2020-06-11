@@ -47,13 +47,13 @@
   height: 100vh;
   position: fixed;
   left: 50%;
-  background: var(--second);
+  background: var(--main);
   overflow-y: hidden;
   padding-top: 18%;
 }
 
 .content .r-col p {
-  color: #fff;
+  color: var(--white);
   margin-left: 6em;
   margin-right: 6em;
 }
@@ -73,7 +73,7 @@
 .content .r-col .buttons p {
   display: inline-block;
   margin: 1.4em .3em 0 0;
-  border: solid 1.5px #fff;
+  border: solid 1.5px var(--white);
   text-transform: uppercase;
   padding: .6em .8em;
   font-size: 1em;
@@ -83,7 +83,7 @@
 }
 
 .content .r-col .buttons p:hover {
-  background: #fff;
-  color: var(--second);
+  background: var(--white);
+  color: var(--main);
 }
 /*# sourceMappingURL=management-and-edition.css.map */

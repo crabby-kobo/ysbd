@@ -7,7 +7,7 @@
 5. Footer */
 /* 1. HEADER */
 header {
-  background: #fff;
+  background: var(--white);
 }
 
 /* 2. GENERAL */
@@ -50,7 +50,7 @@ header {
   padding: 7px 10px;
   font-family: "Avenir Black", sans-serif;
   text-decoration: none;
-  color: #000;
+  color: var(--black);
   cursor: pointer;
   line-height: 2.3rem;
 }
@@ -61,7 +61,7 @@ header {
 
 .filters #filters li span.active {
   background: var(--main);
-  color: #fff;
+  color: var(--white);
 }
 
 /* 4. GALLERY */
@@ -101,7 +101,7 @@ header {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-family: "Avenir Black", sans-serif;
-  color: #fff;
+  color: var(--white);
   text-transform: uppercase;
 }
 

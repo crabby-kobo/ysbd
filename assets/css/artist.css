@@ -43,23 +43,28 @@
   background: var(--main);
   z-index: 1;
   position: fixed;
-  bottom: 20%;
-  width: 100%;
+  right: 0;
+  bottom: 17%;
+  width: 50%;
 }
 
 .content .contact p {
   font-size: 1.6em;
   font-family: "Avenir Black", sans-serif;
-  color: #fff;
+  color: var(--white);
   font-weight: bold;
   font-style: normal;
   text-transform: uppercase;
-  padding: 1em 3.5em;
+  padding: .4em 1.2em;
+  text-align: center;
 }
 
-.content .contact p a {
-  padding: 1px 8px;
-  background: #fff;
+.content .contact:hover {
+  background: var(--white);
+}
+
+.content .contact:hover p {
+  color: var(--main);
 }
 
 @media all and (max-width: 1130px) {
@@ -78,8 +83,8 @@
   -ms-grid-column: 1;
   grid-area: lcol;
   z-index: 1;
-  background: #fff;
-  padding: 8em 6em 0 6em;
+  background: var(--white);
+  padding: 8em 0 0 0;
   width: auto;
   height: auto;
 }
@@ -90,7 +95,7 @@
   top: 0;
   left: 0;
   width: 50%;
-  background: #fff;
+  background: var(--white);
   height: 6em;
 }
 
@@ -100,43 +105,58 @@
   }
 }
 
-.l-col .rs ul {
-  margin: .3rem -3px 4rem 0;
-  padding: 0;
+.l-col .presentation {
+  padding-left: 6em;
+  padding-right: 6em;
 }
 
-.l-col .rs ul a:link,
-.l-col .rs ul a:visited {
-  color: var(--main);
-}
-
-.l-col .rs li {
-  cursor: pointer;
-  margin: 0 1px 2rem 1px;
-}
-
-.l-col h2 {
+.l-col .presentation h1 {
   margin-bottom: .3em;
   line-height: 1em;
 }
 
-.l-col .label {
+.l-col .presentation .label {
   display: inline-block;
   margin-top: -.5em;
   margin-bottom: 1rem;
   font-family: "Avenir Black", sans-serif;
   padding: 4px 9px;
   background: var(--main);
-  color: #fff;
+  color: var(--white);
 }
 
-.l-col .comment {
+.l-col .presentation .comment {
   font-style: italic;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: .5em;
+}
+
+.l-col .presentation .rs ul {
+  margin: .3rem -3px 1em 0;
+  padding: 0;
+}
+
+.l-col .presentation .rs ul a:link,
+.l-col .presentation .rs ul a:visited {
+  color: var(--main);
+}
+
+.l-col .presentation .rs li {
+  cursor: pointer;
+  margin: 0 1px 2rem 1px;
+}
+
+.l-col .intro {
+  background: var(--main);
+  color: var(--white);
+  padding: 1.5em 6em;
+  margin-top: 3em;
 }
 
 .l-col .text {
-  margin-bottom: 3em;
+  margin-bottom: 5em;
+  padding-left: 6em;
+  padding-right: 6em;
 }
 
 .l-col .text p {
@@ -190,7 +210,7 @@
   font-family: "Avenir Book", sans-serif;
   font-weight: normal;
   font-style: normal;
-  color: #000;
+  color: var(--black);
   font-size: 0.8em;
   text-align: center;
   margin: 0;
@@ -234,10 +254,15 @@
   font-family: "Avenir Book", sans-serif;
   font-weight: normal;
   font-style: normal;
-  color: #000;
+  color: var(--black);
   font-size: 0.8em;
   text-align: center;
   margin: 0;
+}
+
+.l-col footer {
+  padding-left: 6em;
+  padding-right: 6em;
 }
 
 @media all and (max-width: 1130px) {

@@ -30,7 +30,7 @@
   width: 50%;
   font-size: 5em;
   font-family: 'Avenir Black', sans-serif;
-  color: #fff;
+  color: var(--white);
   font-style: normal;
   text-transform: uppercase;
 }

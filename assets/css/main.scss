@@ -69,13 +69,13 @@
     width: 19px;
     height: 19px;
     font-size: 21px;
-    background-color: #fff;
+    background-color: var(--white);
     border: solid 2px var(--main);
     border-radius: 50%;
 }
 
 .socicon:hover {
-    color: #fff;
+    color: var(--white);
     background-color: var(--main);
 }
 
@@ -1272,20 +1272,23 @@
 
 :root {
     --main: #e20613;
-    --second: #505050;
+    --second: #A6020C;
+    --grey: #737373;
+    --white: #fff;
+    --black: #020122;
 }
 
 /* 3. GENERAL */
 
 html {
-    background: #fff;
+    background: var(--white);
 
     body {
-        background: #fff;
+        background: var(--white);
         font-family: "Avenir Book", sans-serif;
         font-weight: normal;
         font-style: normal;
-        color: #000;
+        color: var(--black);
         margin: 0;
         display: grid;
         grid-template-areas:
@@ -1299,23 +1302,15 @@ html {
             z-index: 5;
             position: fixed;
             right: 0;
-            background: var(--main);
+            background: var(--second);
             width: 50%;
             height: 100vh;
             box-sizing: border-box;
             display: none;
             transform: scaleX(0);
             transform-origin: right;
-            // display: grid;
-            // grid-template-areas:
-            //     "close"
-            //     "links";
-            // grid-template-columns: 1fr;
-            // grid-template-rows: 10rem auto;
-
 
             .close-btn {
-                // grid-area: close;
                 padding-top: 2.4em;
                 padding-right: 6em;
                 width: 20px;
@@ -1331,7 +1326,6 @@ html {
             }
 
             ul {
-                // grid-area: links;
                 position: absolute;
                 width: 100%;
                 top: 50%;
@@ -1339,8 +1333,12 @@ html {
                 list-style-type: none;
                 padding: 0;
 
+                li {
+                    background: var(--second);
+                }
+
                 a {
-                    color: #fff;
+                    color: var(--white);
                     font-family: "Avenir Black", sans-serif;
                     font-weight: bold;
                     font-size: 2em;
@@ -1394,10 +1392,10 @@ html {
                 }
 
                 li:hover {
-                    background: #fff;
+                    background: var(--white);
 
                     a {
-                        color: var(--main);
+                        color: var(--second);
                     }
                 }
             }
@@ -1559,8 +1557,8 @@ html {
                     }
 
                     .white-header {
-                        color: #fff;
-                        border-color: #fff;
+                        color: var(--white);
+                        border-color: var(--white);
                     }
 
                     // .en {
@@ -1573,11 +1571,11 @@ html {
 
                     .red-header:hover {
                         background-color: var(--main);
-                        color: #fff;
+                        color: var(--white);
                     }
 
                     .white-header:hover {
-                        background-color: #fff;
+                        background-color: var(--white);
                         color: var(--second);
                     }
                 }
@@ -1597,45 +1595,48 @@ html {
         }
 
         .content {
-            background: #fff;
+            background: var(--white);
+        }
+
+        h1 {
+            font-family: "Avenir Black", sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 4em;
+            margin-bottom: .3em;
+            color: var(--main);
+        }
+
+        @media all and (max-width: 850px) {
+            h1 {
+                font-size: 3em;
+            }
+        }
+
+        @media all and (max-width: 700px) {
+            h1 {
+                font-size: 2.5em;
+            }
+        }
+
+        @media all and (max-width: 580px) {
+            h1 {
+                font-size: 2em;
+            }
         }
 
         h2 {
             font-family: "Avenir Black", sans-serif;
             font-weight: bold;
             text-transform: uppercase;
-            font-size: 3.5em;
-            margin-bottom: .3em;
             color: var(--main);
-        }
-
-        @media all and (max-width: 850px) {
-            h2 {
-                font-size: 3em;
-            }
-        }
-
-        @media all and (max-width: 700px) {
-            h2 {
-                font-size: 2.5em;
-            }
-        }
-
-        @media all and (max-width: 580px) {
-            h2 {
-                font-size: 2em;
-            }
-        }
-
-        h3 {
-            font-family: "Avenir Black", sans-serif;
-            font-weight: bold;
-            text-transform: uppercase;
-            color: var(--main);
-            margin-bottom: 0;
+            font-size: 1.5em;
+            margin-bottom: 1.1em;
         }
 
         p {
+            font-size: 1.1em;
+
             a {
                 color: var(--main);
             }
@@ -1649,7 +1650,7 @@ html {
             padding: 2em 0;
 
             .copyright {
-                color: #000;
+                color: var(--black);
                 font-family: 'Avenir Light';
                 font-weight: Light;
                 font-style: normal;
@@ -1658,7 +1659,7 @@ html {
 
                 a {
                     text-decoration: none;
-                    color: #000;
+                    color: var(--black);
                 }
             }
         }

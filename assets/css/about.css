@@ -38,7 +38,7 @@
 }
 
 .content .l-col .rs a {
-  color: #fff;
+  color: var(--white);
   background: var(--main);
   padding: .3em .6em;
   margin-right: .3em;
@@ -57,7 +57,7 @@
   height: 100vh;
   position: fixed;
   left: 50%;
-  background: var(--second);
+  background: var(--main);
   overflow-y: hidden;
 }
 
@@ -77,14 +77,14 @@
 }
 
 .content .r-col .contact a {
-  color: #fff;
+  color: var(--white);
 }
 
 .content .r-col .contact:hover {
-  background: #fff;
+  background: var(--white);
 }
 
 .content .r-col .contact:hover a {
-  color: var(--second);
+  color: var(--main);
 }
 /*# sourceMappingURL=about.css.map */

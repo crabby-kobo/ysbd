@@ -43,12 +43,12 @@
         height: 100vh;
         position: fixed;
         left: 50%;
-        background: var(--second);
+        background: var(--main);
         overflow-y: hidden;
         padding-top: 18%;
 
         p {
-            color: #fff;
+            color: var(--white);
             margin-left: 6em;
             margin-right: 6em;
 
@@ -67,7 +67,7 @@
             p {
                 display: inline-block;
                 margin: 1.4em .3em 0 0;
-                border: solid 1.5px #fff;
+                border: solid 1.5px var(--white);
                 text-transform: uppercase;
                 padding: .6em .8em;
                 font-size: 1em;
@@ -77,8 +77,8 @@
             }
 
             p:hover {
-                background: #fff;
-                color: var(--second);
+                background: var(--white);
+                color: var(--main);
             }
         }
     }

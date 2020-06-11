@@ -64,7 +64,7 @@
         </div>
 
         <div class="l-col">
-            <span></span>
+            <span id="bg-header"></span>
 
             <h2>Sichuan</h2>
             <p class="label">Vinyl Mobile</p>
@@ -217,24 +217,27 @@
         $(document).ready(function () {
             var owl = $('#slider-area');
             owl.owlCarousel({
-                // loop: true,
+                loop: true,
                 margin: 10,
-                // nav: true,
-                // autoplay: true,
-                // autoplayTimeout: 1700,
-                // autoplayHoverPause: true,
+                responsiveClass: true,
+                nav: false,
+                dots: true,
+                autoplayTimeout: 2500,
+                autoplayHoverPause: true,
                 responsive: {
-                    // breakpoint from 0 up
                     0: {
-                        items: 1
+                        items: 1,
+                        autoplay: true,
                     },
-                    // breakpoint from 600 up
-                    600: {
-                        items: 2
+
+                    1070: {
+                        items: 2,
+                        autoplay: true,
                     },
-                    // breakpoint from 1000 up
-                    1000: {
-                        items: 3
+
+                    1405: {
+                        items: 3,
+                        autoplay: false,
                     }
                 }
             });

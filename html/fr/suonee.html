@@ -64,7 +64,7 @@
         </div>
 
         <div class="l-col">
-            <span></span>
+            <span id="bg-header"></span>
 
             <h2>Suonee</h2>
             <p class="label">Regal Sound</p>
@@ -177,25 +177,26 @@
         $(document).ready(function () {
             var owl = $('#slider-area');
             owl.owlCarousel({
-                // loop: true,
+                loop: true,
                 margin: 10,
-                // nav: true,
+                responsiveClass: true,
+                nav: false,
+                dots: true,
                 // autoplay: true,
-                // autoplayTimeout: 1700,
-                // autoplayHoverPause: true,
+                autoplayTimeout: 2500,
+                autoplayHoverPause: true,
                 responsive: {
-                    // breakpoint from 0 up
                     0: {
                         items: 1
                     },
-                    // breakpoint from 600 up
-                    1000: {
-                        items: 2
-                    },
-                    // breakpoint from 1000 up
-                    1435: {
-                        items: 3
-                    }
+
+                    // 1070: {
+                    //     items: 2
+                    // },
+
+                    // 1405: {
+                    //     items: 3
+                    // }
                 }
             });
         });

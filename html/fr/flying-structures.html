@@ -65,7 +65,7 @@
         </div>
 
         <div class="l-col">
-            <span></span>
+            <span id="bg-header"></span>
 
             <h2>Flying Structures</h2>
             <p class="label">Aurore 404</p>
@@ -150,23 +150,24 @@
             owl.owlCarousel({
                 loop: true,
                 margin: 10,
-                // nav: true,
-                autoplay: true,
-                autoplayTimeout: 3000,
+                responsiveClass: true,
+                nav: false,
+                dots: true,
+                // autoplay: true,
+                autoplayTimeout: 2500,
                 autoplayHoverPause: true,
                 responsive: {
-                    // breakpoint from 0 up
                     0: {
                         items: 1
                     },
-                    // breakpoint from 600 up
-                    600: {
-                        items: 2
-                    },
-                    // breakpoint from 1000 up
-                    1000: {
-                        items: 3
-                    }
+
+                    // 1070: {
+                    //     items: 2
+                    // },
+
+                    // 1405: {
+                    //     items: 3
+                    // }
                 }
             });
         });

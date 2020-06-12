@@ -33,38 +33,36 @@
 
 @media all and (max-width: 1130px) {
   .content .r-col {
-    left: 0;
     height: 100%;
     width: 100%;
   }
 }
 
 .content .contact {
-  background: var(--main);
   z-index: 1;
   position: fixed;
-  right: 0;
-  bottom: 17%;
-  width: 50%;
+  top: 50%;
+  left: 75%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .content .contact p {
-  font-size: 1.6em;
+  font-size: 1.4em;
   font-family: "Avenir Black", sans-serif;
-  color: var(--white);
+  color: var(--main);
   font-weight: bold;
   font-style: normal;
   text-transform: uppercase;
+  border: solid 2px var(--main);
   padding: .4em 1.2em;
   text-align: center;
+  cursor: pointer;
 }
 
-.content .contact:hover {
-  background: var(--white);
-}
-
-.content .contact:hover p {
-  color: var(--main);
+.content .contact p:hover {
+  background: var(--main);
+  color: var(--white);
 }
 
 @media all and (max-width: 1130px) {
@@ -161,6 +159,7 @@
 
 .l-col .text p {
   line-height: 1.5em;
+  margin-top: 0;
 }
 
 .l-col .text p em {

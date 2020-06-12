@@ -31,29 +31,33 @@
   @media all and (max-width: 1130px) {
     .r-col {
       // top: 6em;
-      left: 0;
+      // left: 0;
       height: 100%;
       width: 100%;
     }
   }
 
   .contact {
-    background: var(--main);
+    // background: var(--main);
     z-index: 1;
     position: fixed;
-    right: 0;
-    bottom: 17%;
-    width: 50%;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
 
     p {
-      font-size: 1.6em;
+      font-size: 1.4em;
       font-family: "Avenir Black", sans-serif;
-      color: var(--white);
+      color: var(--main);
       font-weight: bold;
       font-style: normal;
       text-transform: uppercase;
+      border: solid 2px var(--main);
+      // display: inline-block;
       padding: .4em 1.2em;
       text-align: center;
+      cursor: pointer;
+
 
       // a {
       //   // padding: 1px 8px;
@@ -66,15 +70,20 @@
       //   border-bottom: none;
       // }
     }
-  }
 
-  .contact:hover {
-    background: var(--white);
-
-    p {
-      color: var(--main);
+    p:hover {
+      background: var(--main);
+      color: var(--white);
     }
   }
+
+  // .contact:hover {
+  //   background: var(--white);
+
+  //   p {
+  //     color: var(--main);
+  //   }
+  // }
 }
 
 @media all and (max-width: 1130px) {
@@ -170,6 +179,7 @@
 
     p {
       line-height: 1.5em;
+      margin-top: 0;
 
       em {
         font-size: 1.2em;

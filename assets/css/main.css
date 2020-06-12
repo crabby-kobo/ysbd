@@ -57,7 +57,7 @@
   -webkit-font-smoothing: antialiased;
   font-size: 1.2em;
   margin: 3px;
-  padding: 9px 12px 12px 9px;
+  padding: 8px 11px 11px 8px;
   width: 19px;
   height: 19px;
   font-size: 21px;
@@ -1671,7 +1671,7 @@ html body h1 {
   text-transform: uppercase;
   font-size: 4em;
   margin-bottom: .3em;
-  color: var(--main);
+  color: var(--black);
 }
 
 @media all and (max-width: 850px) {
@@ -1696,9 +1696,9 @@ html body h2 {
   font-family: "Avenir Black", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
-  color: var(--main);
+  color: var(--black);
   font-size: 1.5em;
-  margin-bottom: 1.1em;
+  margin: 0 0 .5em 0;
 }
 
 html body p {

@@ -1343,25 +1343,14 @@ html body nav ul a {
   padding: 0;
 }
 
-@media all and (max-width: 580px) {
-  html body nav ul a {
-    font-size: 1.5em;
-  }
-}
-
-@media all and (max-height: 480px) {
-  html body nav ul a {
-    font-size: 1.3em;
-  }
-}
-
 html body nav ul li {
   opacity: 0;
-  padding: 7% 5em;
+  padding: 7% 3.5em;
 }
 
 @media all and (max-width: 580px) {
   html body nav ul li {
+    font-size: 1.5em;
     padding-right: 2em;
     padding-left: 2em;
   }
@@ -1376,6 +1365,7 @@ html body nav ul li {
 
 @media all and (max-height: 520px) {
   html body nav ul li {
+    font-size: 1.3em;
     padding-top: 3%;
     padding-bottom: 3%;
   }
@@ -1390,9 +1380,6 @@ html body nav ul li {
 
 html body nav ul li:hover {
   background: var(--white);
-}
-
-html body nav ul li:hover a {
   color: var(--second);
 }
 

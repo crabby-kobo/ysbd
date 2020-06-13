@@ -1293,7 +1293,7 @@ html body nav {
   z-index: 5;
   position: fixed;
   right: 0;
-  background: var(--second);
+  background: var(--main);
   width: 50%;
   height: 100vh;
   -webkit-box-sizing: border-box;
@@ -1331,7 +1331,7 @@ html body nav ul {
 }
 
 html body nav ul li {
-  background: var(--second);
+  background: var(--main);
 }
 
 html body nav ul a {
@@ -1380,7 +1380,7 @@ html body nav ul li {
 
 html body nav ul li:hover {
   background: var(--white);
-  color: var(--second);
+  color: var(--main);
 }
 
 @media all and (max-width: 850px) {

@@ -63,7 +63,7 @@
     </header>
 
     <div class="content">
-        <div class="l-col">
+        <div class="l-col" id="l-col">
             <h1>À propos</h1>
 
             <h2>Agence d’artistes qui font danser</h2>
@@ -106,6 +106,10 @@
         });
 
         document.getElementById('close-menu').addEventListener('click', function () {
+            overlay.classList.remove('show-menu');
+        });
+
+        document.getElementById('l-col').addEventListener('click', function () {
             overlay.classList.remove('show-menu');
         });
     </script>

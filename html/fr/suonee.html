@@ -71,7 +71,7 @@
             </div>
         </div>
 
-        <div class="l-col">
+        <div class="l-col" id="l-col">
             <span id="bg-header"></span>
 
             <div class="presentation">
@@ -177,6 +177,10 @@
         });
 
         document.getElementById('close-menu').addEventListener('click', function () {
+            overlay.classList.remove('show-menu');
+        });
+
+        document.getElementById('l-col').addEventListener('click', function () {
             overlay.classList.remove('show-menu');
         });
     </script>

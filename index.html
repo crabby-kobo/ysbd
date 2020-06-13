@@ -58,13 +58,11 @@
         </div>
 
         <div class="logo">
-            <a href="./index.html">
-                <img src="./assets/img/icons/logo.svg" alt="YSBD logo">
-            </a>
+            <img src="./assets/img/icons/logo.svg" alt="YSBD logo">
         </div>
     </header>
 
-    <div class="content">
+    <div class="content" id="content">
         <div id="wrapper">
             <div id="slider-area" class="owl-carousel owl-theme">
 
@@ -136,6 +134,7 @@
         </div>
 
     </div>
+
     <script>
         var overlay = document.getElementById('overlay');
         var closeMenu = document.getElementById('close-menu');
@@ -145,6 +144,10 @@
         });
 
         document.getElementById('close-menu').addEventListener('click', function () {
+            overlay.classList.remove('show-menu');
+        });
+
+        document.getElementById('content').addEventListener('click', function () {
             overlay.classList.remove('show-menu');
         });
     </script>

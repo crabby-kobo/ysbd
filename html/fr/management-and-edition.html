@@ -62,7 +62,7 @@
     </header>
 
     <div class="content">
-        <div class="l-col">
+        <div class="l-col" id="l-col">
             <h1>Management & édition</h1>
 
             <p>You Should Be Dancing propose des services de management d’artistes et d’édition.</p>
@@ -107,6 +107,10 @@
         });
 
         document.getElementById('close-menu').addEventListener('click', function () {
+            overlay.classList.remove('show-menu');
+        });
+
+        document.getElementById('l-col').addEventListener('click', function () {
             overlay.classList.remove('show-menu');
         });
     </script>

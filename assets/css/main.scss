@@ -1302,7 +1302,8 @@ html {
             z-index: 5;
             position: fixed;
             right: 0;
-            background: var(--second);
+            // background: var(--second);
+            background: var(--main);
             width: 50%;
             height: 100vh;
             box-sizing: border-box;
@@ -1334,7 +1335,8 @@ html {
                 padding: 0;
 
                 li {
-                    background: var(--second);
+                    // background: var(--second);
+                    background: var(--main);
                 }
 
                 a {
@@ -1383,7 +1385,8 @@ html {
 
                 li:hover {
                     background: var(--white);
-                    color: var(--second);
+                    // color: var(--second);
+                    color: var(--main);
                 }
             }
         }

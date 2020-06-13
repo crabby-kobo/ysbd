@@ -42,7 +42,6 @@
 
         });
     </script>
-
 </head>
 
 <body>
@@ -91,7 +90,7 @@
         </div>
     </header>
 
-    <div class="content">
+    <div class="content" id="content">
         <div class="gallery-title">
             <h1>Booking / Roster</h1>
         </div>
@@ -218,6 +217,10 @@
         });
 
         document.getElementById('close-menu').addEventListener('click', function () {
+            overlay.classList.remove('show-menu');
+        });
+
+        document.getElementById('content').addEventListener('click', function () {
             overlay.classList.remove('show-menu');
         });
     </script>

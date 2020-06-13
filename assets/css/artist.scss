@@ -1,10 +1,40 @@
 /* TABLE OF CONTENTS :
 
-1. Content
-2. Right column
-3. Left column */
+1. Header
+2. Content
+3. Right column
+4. Left column */
 
-/* 1. GENERAL */
+/* 1. HEADER */
+
+.backward {
+  grid-area: backward;
+  margin-top: .3em;
+  height: 21px;
+  width: auto;
+
+  img {
+    height: 100%;
+  }
+
+  p {
+    display: inline;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "Avenir Black", sans-serif;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1em;
+    vertical-align: top;
+    margin-left: .4em;
+  }
+
+  p:hover {
+    color: var(--main);
+  }
+}
+
+/* 2. GENERAL */
 
 .content {
   width: 100%;
@@ -14,7 +44,7 @@
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: auto;
 
-  /* 2. RIGHT COLUMN */
+  /* 3. RIGHT COLUMN */
 
   .r-col {
     grid-area: rcol;
@@ -96,7 +126,7 @@
   }
 }
 
-/* 3. LEFT COLUMN */
+/* 4. LEFT COLUMN */
 
 .l-col {
   grid-area: lcol;

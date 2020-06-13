@@ -1497,8 +1497,8 @@ html {
             padding: 2em 4em;
             display: grid;
             grid-template-areas:
-                "logo menu ";
-            grid-template-columns: repeat(3);
+                "logo backward menu";
+            grid-template-columns: 15% auto 50%;
             grid-template-rows: 100%;
 
             .logo {

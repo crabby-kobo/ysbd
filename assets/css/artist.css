@@ -7,7 +7,7 @@
 /* 1. HEADER */
 .backward {
   grid-area: backward;
-  margin-top: .3em;
+  margin-top: 0.3em;
   height: 21px;
   width: auto;
 }
@@ -25,7 +25,7 @@
   color: var(--black);
   font-size: 1em;
   vertical-align: top;
-  margin-left: .4em;
+  margin-left: 0.4em;
 }
 
 .backward p:hover {
@@ -72,26 +72,42 @@
   position: fixed;
   top: 50%;
   left: 75%;
+  width: 450px;
+  height: 450px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  border: solid 4px var(--white);
+  cursor: pointer;
 }
 
 .content .contact p {
-  font-size: 1.4em;
+  position: fixed;
+  top: 30%;
+  font-size: 2em;
   font-family: "Avenir Black", sans-serif;
-  color: var(--main);
+  color: var(--white);
   font-weight: bold;
   font-style: normal;
   text-transform: uppercase;
-  border: solid 2px var(--main);
-  padding: .4em 1.2em;
+  padding: 0.4em 1.2em;
   text-align: center;
   cursor: pointer;
 }
 
-.content .contact p:hover {
-  background: var(--main);
+.content .contact p a {
   color: var(--white);
+}
+
+.content .contact:hover {
+  border: solid 4px var(--main);
+}
+
+.content .contact:hover p {
+  color: var(--main);
+}
+
+.content .contact:hover p a {
+  color: var(--main);
 }
 
 @media all and (max-width: 1130px) {
@@ -138,13 +154,13 @@
 }
 
 .l-col .presentation h1 {
-  margin-bottom: .3em;
+  margin-bottom: 0.3em;
   line-height: 1em;
 }
 
 .l-col .presentation .label {
   display: inline-block;
-  margin-top: -.5em;
+  margin-top: -0.5em;
   margin-bottom: 1rem;
   font-family: "Avenir Black", sans-serif;
   padding: 4px 9px;
@@ -155,11 +171,11 @@
 .l-col .presentation .comment {
   font-style: italic;
   margin-top: 0;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 .l-col .presentation .rs ul {
-  margin: .3rem -3px 1em 0;
+  margin: 0.3rem -3px 1em 0;
   padding: 0;
 }
 

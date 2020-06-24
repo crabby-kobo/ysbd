@@ -153,7 +153,8 @@
 
 .l-col .presentation h1 {
   margin-bottom: 0.3em;
-  line-height: 1em;
+  font-size: 4em;
+  line-height: 1.1em;
 }
 
 .l-col .presentation .label {

@@ -1592,9 +1592,10 @@ html {
             font-family: "Avenir Black", sans-serif;
             font-weight: bold;
             text-transform: uppercase;
-            font-size: 4em;
+            font-size: 3.5em;
             margin-bottom: .3em;
             color: var(--black);
+            line-height: 1.2em;
         }
 
         @media all and (max-width: 850px) {

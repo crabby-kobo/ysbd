@@ -28,10 +28,6 @@
   margin-left: 0.4em;
 }
 
-.backward p:hover {
-  color: var(--main);
-}
-
 /* 2. GENERAL */
 .content {
   width: 100%;
@@ -295,6 +291,32 @@
   font-size: 0.8em;
   text-align: center;
   margin: 0;
+}
+
+.l-col .press-kit {
+  background: var(--main);
+  padding: 4em 0;
+}
+
+.l-col .press-kit p {
+  text-transform: uppercase;
+  font-family: "Avenir Black", sans-serif;
+  font-size: 1em;
+  padding: 0 6em;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.l-col .press-kit p a {
+  color: var(--white);
+  border: solid 2px var(--white);
+  padding: .6em 3.5em;
+  display: inline-block;
+}
+
+.l-col .press-kit p a:hover {
+  color: var(--main);
+  background: var(--white);
 }
 
 .l-col footer {

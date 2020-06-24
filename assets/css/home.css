@@ -26,12 +26,14 @@
 .content #wrapper #slider-area p {
   position: absolute;
   bottom: 10%;
-  left: 5rem;
-  width: 50%;
-  font-size: 5em;
+  left: 0;
+  width: auto;
+  font-size: 3em;
   font-family: 'Avenir Black', sans-serif;
   color: var(--white);
   font-style: normal;
   text-transform: uppercase;
+  padding: .5em 1em .5em 1.9em;
+  background: red;
 }
 /*# sourceMappingURL=home.css.map */

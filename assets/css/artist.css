@@ -68,8 +68,8 @@
   position: fixed;
   top: 50%;
   left: 75%;
-  width: 450px;
-  height: 450px;
+  width: 480px;
+  height: 480px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border: solid 4px var(--white);
@@ -78,20 +78,22 @@
 
 .content .contact p {
   position: fixed;
-  top: 30%;
-  font-size: 2em;
-  font-family: "Avenir Black", sans-serif;
+  bottom: .6em;
+  left: .8em;
+  margin: 0;
+  padding: 0;
+  font-size: 2.1em;
+  font-family: "Library 3 AM", sans-serif;
   color: var(--white);
-  font-weight: bold;
-  font-style: normal;
   text-transform: uppercase;
-  padding: 0.4em 1.2em;
-  text-align: center;
+  line-height: 1.2em;
+  text-align: left;
   cursor: pointer;
 }
 
-.content .contact p a {
-  color: var(--white);
+.content .contact p em {
+  color: var(--main);
+  font-style: normal;
 }
 
 .content .contact:hover {

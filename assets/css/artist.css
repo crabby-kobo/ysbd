@@ -91,11 +91,6 @@
   cursor: pointer;
 }
 
-.content .contact p em {
-  color: var(--main);
-  font-style: normal;
-}
-
 .content .contact:hover {
   border: solid 4px var(--main);
 }

@@ -81,17 +81,10 @@
       font-size: 2.1em;
       font-family: "Library 3 AM", sans-serif;
       color: var(--white);
-      // font-weight: bold;
-      // font-style: normal;
       text-transform: uppercase;
       line-height: 1.2em;
       text-align: left;
       cursor: pointer;
-
-      em {
-        color: var(--main);
-        font-style: normal;
-      }
     }
   }
 
@@ -300,16 +293,6 @@
     background: var(--main);
     padding: 4em 0;
 
-    // p {
-    //   font-family: "Avenir Black", sans-serif;
-    //   font-weight: bold;
-    //   font-style: normal;
-    //   color: var(--white);
-    //   font-size: 1.4em;
-    //   text-transform: uppercase;
-    //   padding: 0 4em;
-    // }
-
     p {
       text-transform: uppercase;
       font-family: "Avenir Black", sans-serif;
@@ -328,12 +311,6 @@
       a:hover {
         color: var(--main);
         background: var(--white);
-        // }
-
-        // .cta {
-        //   color: var(--main);
-        //   background: var(--white);
-        // }
       }
     }
   }
@@ -341,15 +318,6 @@
   footer {
     padding-left: 6em;
     padding-right: 6em;
-    // background: var(--main);
-
-    .copyright {
-      // color: var(--white);
-
-      a {
-        // color: var(--white);
-      }
-    }
   }
 }
 

@@ -1680,7 +1680,7 @@ html body h1 {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 3.5em;
-  margin-bottom: 0.3em;
+  margin-bottom: .8em;
   color: var(--black);
   line-height: 1.2em;
 }
@@ -1709,7 +1709,7 @@ html body h2 {
   text-transform: uppercase;
   color: var(--black);
   font-size: 1.5em;
-  margin: 0 0 0.5em 0;
+  margin: 0 0 .8em 0;
 }
 
 html body p {

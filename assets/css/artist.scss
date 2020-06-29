@@ -10,8 +10,10 @@
 .backward {
   grid-area: backward;
   margin-top: 0.3em;
+  margin-right: 6em;
   height: 21px;
   width: auto;
+  text-align: right;
 
   img {
     height: 100%;
@@ -142,7 +144,7 @@
     padding-right: 6em;
 
     h1 {
-      margin-bottom: 0.3em;
+      margin-bottom: .3em;
       font-size: 4em;
       line-height: 1.1em;
     }
